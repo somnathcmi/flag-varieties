@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.8.22)  9 FEB 2022 14:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.8.22)  9 FEB 2022 15:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -741,10 +741,10 @@ File: ueus.fd 2013/01/14 v3.01 Euler Script
 (./examples/shape221hb.tex) (./examples/shape221x1x2rel.tex [21])
 (./examples/shape2111hb.tex)) [22] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 17455 strings out of 480502
- 341332 string characters out of 5899264
- 814818 words of memory out of 5000000
- 34709 multiletter control sequences out of 15000+600000
+ 17456 strings out of 480502
+ 341350 string characters out of 5899264
+ 815818 words of memory out of 5000000
+ 34710 multiletter control sequences out of 15000+600000
  427825 words of font info for 121 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  98i,14n,97p,1872b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -774,7 +774,7 @@ nts/type1/public/amsfonts/cm/cmtt9.pfb></home/study/texlive/2021/texmf-dist/fon
 ts/type1/public/amsfonts/euler/eusm10.pfb></home/study/texlive/2021/texmf-dist/
 fonts/type1/public/amsfonts/euler/eusm7.pfb></home/study/texlive/2021/texmf-dis
 t/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (22 pages, 387237 bytes).
+Output written on main.pdf (22 pages, 388162 bytes).
 PDF statistics:
  208 PDF objects out of 1000 (max. 8388607)
  130 compressed objects within 2 object streams
