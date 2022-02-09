@@ -1,0 +1,7 @@
+{\def\lr#1{\multicolumn{1}{|@{\hspace{.6ex}}c@{\hspace{.6ex}}|}{\raisebox{-.3ex}{$#1$}}}
+\raisebox{-.6ex}{$\begin{array}[b]{*{7}c}\cline{1-7}
+\lr{1}&\lr{1}&\lr{1}&\lr{2}&\lr{3}&\lr{3}&\lr{3}\\\cline{1-7}
+\lr{2}&\lr{2}&\lr{4}&\lr{4}&\lr{6}&\lr{6}&\lr{6}\\\cline{1-7}
+\lr{4}&\lr{5}&\lr{5}&\lr{5}&\lr{7}&\lr{7}&\lr{7}\\\cline{1-7}
+\end{array}$}
+}

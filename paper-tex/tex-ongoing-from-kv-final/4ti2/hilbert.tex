@@ -1,0 +1,64 @@
+\newcommand\hilbert{
+
+\subsection{Hilbert basis}
+\npara
+\begin{definition}[Cone]
+    A set \(P\in \IR^n\) is cone if for any \(x,y\in P\) and non-negative \(\lambda_1,\lambda_2\),
+    we have \(\lambda_1 x + \lambda_2 y \in P\). A cone \(P\) is pointed if \(P \cap -P = \{0\}\). 
+    A cone \(P\) is polyhedral if \(P = \{ x \in \IR^n | Bx \ge 0\}\) for some matrix \(B\). 
+    Set \(\{g_1,...g_k\}\) is called generators of \(P\) 
+    if for all \(x \in P\) there are non-negative \(\lambda_1,...,\lambda_k\) 
+    such that \(x = \sum_{i=1}^k \lambda_i c_i\).
+\end{definition}
+\begin{definition}[Lattice]
+    A lattice in \(\IR^n\) is subgroup of \(\IR^n\) under addition.
+\end{definition}
+\begin{definition}[From paper on Hilbert basis]
+    Let \(P \in \IR^n\) be a polyhedral cone with rational generators and 
+    let \(\Lambda \subset \IZ^n\) be a lattice. 
+    We call finite set \(H = \{h_1,...,h_t\} \subset \Lambda \cap P\) generate monoid 
+    \((\Lambda \cap P,+)\) if for every \(x \in \Lambda \cap P\) 
+    there are non-negative integers \(\lambda_1,...,\lambda_t\) such that 
+    \(\sum_{i=1}^t \lambda_i h_i\). 
+    Following are known results:
+    \begin{enumerate}
+        \item
+            If \(P\) is pointed cone then there is unique inclusion minimal generating set.
+        \item
+            If \(\Lambda = \IZ^n\) and \(P\) is pointed cone then the inclusion minimal set \(H\) 
+            is called Hilbert basis of monoid \(P\).
+        \item 
+            Every element of hilbert basis is indecomposible, i.e., 
+            it cannot be writen as sum of two elements of the monoid.
+    \end{enumerate}
+\end{definition}
+
+Note that \(P_{\SC} = ker(A)_{_{\ge 0}}\) is pointed cone:
+1. Addition of two non-negative vectors in \(ker(A)\) is non-negative and in \(ker(A)\). 
+2. Non-negative scalar multiple of non-negative vector in \(ker(A)\) 
+is non-negative and in \(ker(A)\). 
+3. \(x,-x \in P_{\SC} \implies x = 0\). 
+\begin{definition}
+    We say \(T \in STab(r,n,\SC)\) splits directly 
+    if there are two tableaux \(X,Y \in STab(r,n,\SC)\) such that \(T=XY\) up to rearranging columns.
+\end{definition}
+
+\begin{lemma}
+    \(T \in STab(r,n,\SC)\) splits directly iff \(v_{_T} \not\in H\). 
+    Where \(H\) is hilbert basis of \(P_{\SC}\).
+\end{lemma}
+\begin{proof}
+    \((\implies)\)
+    Let \(T\) splits directly then there exist \(X,Y \in STab(r,n,\SC)\) such that 
+    \(T = XY\) up to rearranging columns. This implies \(v_{_T} = v_{_X} + v_{_Y}\) 
+    and thus \(v_{T}\) is decomposible hence \(v_{_T} \not\in H\).
+
+    \((\impliedby)\) If \(v_{_T} \not\in H\) then there are non-negative integers 
+    \(\lambda_1,...,\lambda_t\) such that \(v_{_T} = \sum_{i=1}^t \lambda_i h_i\). 
+    Note that \(\sum_{i=1}^t \lambda_i \ge 2\), if not then \(v_{_T} \in H\). 
+    This implies there is \(u\in Z^{l+1}\cap P_{\SC} \) and \(h,h' \in H\) 
+    such that \(v_{_T} = h + h' + u\). 
+    Using property \(v_{_{ST}} = v_{_S} + v_{_T}\) and corollary 4, we get \(T=T^{h}T^{h'}T^u\).     
+\end{proof}
+%END
+}

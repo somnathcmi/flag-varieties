@@ -1,0 +1,279 @@
+\subsection{The polynomials \(f_1\) and \(f_2\)}
+\subsubsection{Polynomial \(f_1\)}
+The polynomial \(f_1\) is obtained by straigntenning monomial \(x_1x_2\)
+\[
+x_1x_2 = 
+\begin{array}[c]{*{8}c}\cline{1-8}
+\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{2}&\lr{2}&\lr{3}&\lr{4}\\\cline{1-8}
+\lr{2}&\lr{2}&\lr{3}&\lr{4}&\lr{3}&\lr{4}&\lr{5}&\lr{5}\\\cline{1-8}
+\lr{3}&\lr{4}&\lr{5}&\lr{5}\\\cline{1-4}
+\end{array}
+\]
+Observe that the monomial is nonstandard and noncomparable pair is \([1,4,5],[2,3]\). We will use following Pl\'{u}cker relation.
+\[
+\begin{array}[c]{*{2}c}\cline{1-2}
+\lr{1}&\lr{2}\\\cline{1-2}
+\lr{4}&\lr{3}\\\cline{1-2}
+\lr{5}\\\cline{1-1}
+\end{array}
+-\begin{array}[c]{*{2}c}\cline{1-2}
+\lr{1}&\lr{2}\\\cline{1-2}
+\lr{3}&\lr{4}\\\cline{1-2}
+\lr{5}\\\cline{1-1}
+\end{array}
++\begin{array}[c]{*{2}c}\cline{1-2}
+\lr{1}&\lr{3}\\\cline{1-2}
+\lr{2}&\lr{4}\\\cline{1-2}
+\lr{5}\\\cline{1-1}
+\end{array}
++\begin{array}[c]{*{2}c}\cline{1-2}
+\lr{1}&\lr{2}\\\cline{1-2}
+\lr{3}&\lr{5}\\\cline{1-2}
+\lr{4}\\\cline{1-1}
+\end{array}
+-\begin{array}[c]{*{2}c}\cline{1-2}
+\lr{1}&\lr{3}\\\cline{1-2}
+\lr{2}&\lr{5}\\\cline{1-2}
+\lr{4}\\\cline{1-1}
+\end{array}
++\begin{array}[c]{*{2}c}\cline{1-2}
+\lr{1}&\lr{4}\\\cline{1-2}
+\lr{2}&\lr{5}\\\cline{1-2}
+\lr{3}\\\cline{1-1}
+\end{array}
+=0
+\]
+We get
+\begin{align*}
+x_1x_2 
+& = 
+\begin{array}[c]{*{8}c}\cline{1-8}
+\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{2}&\lr{2}&\lr{3}&\lr{4}\\\cline{1-8}
+\lr{2}&\lr{2}&\lr{3}&\lr{4}&\lr{3}&\lr{4}&\lr{5}&\lr{5}\\\cline{1-8}
+\lr{3}&\lr{4}&\lr{5}&\lr{5}\\\cline{1-4}
+\end{array}\\
+&=\begin{array}[c]{*{8}c}\cline{1-8}
+\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{2}&\lr{2}&\lr{3}&\lr{4}\\\cline{1-8}
+\lr{2}&\lr{2}&\lr{3}&\lr{3}&\lr{4}&\lr{4}&\lr{5}&\lr{5}\\\cline{1-8}
+\lr{3}&\lr{4}&\lr{5}&\lr{5}\\\cline{1-4}
+\end{array}
+-\begin{array}[c]{*{8}c}\cline{1-8}
+\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{2}&\lr{3}&\lr{3}&\lr{4}\\\cline{1-8}
+\lr{2}&\lr{2}&\lr{2}&\lr{3}&\lr{4}&\lr{4}&\lr{5}&\lr{5}\\\cline{1-8}
+\lr{3}&\lr{4}&\lr{5}&\lr{5}\\\cline{1-4}
+\end{array}
+-\begin{array}[c]{*{8}c}\cline{1-8}
+\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{2}&\lr{2}&\lr{3}&\lr{4}\\\cline{1-8}
+\lr{2}&\lr{2}&\lr{3}&\lr{3}&\lr{4}&\lr{5}&\lr{5}&\lr{5}\\\cline{1-8}
+\lr{3}&\lr{4}&\lr{4}&\lr{5}\\\cline{1-4}
+\end{array}\\
+&\hspace{200pt}
++\begin{array}[c]{*{8}c}\cline{1-8}
+\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{2}&\lr{3}&\lr{3}&\lr{4}\\\cline{1-8}
+\lr{2}&\lr{2}&\lr{2}&\lr{3}&\lr{4}&\lr{5}&\lr{5}&\lr{5}\\\cline{1-8}
+\lr{3}&\lr{4}&\lr{4}&\lr{5}\\\cline{1-4}
+\end{array}
+-\begin{array}[c]{*{8}c}\cline{1-8}
+\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{2}&\lr{3}&\lr{4}&\lr{4}\\\cline{1-8}
+\lr{2}&\lr{2}&\lr{2}&\lr{3}&\lr{4}&\lr{5}&\lr{5}&\lr{5}\\\cline{1-8}
+\lr{3}&\lr{3}&\lr{4}&\lr{5}\\\cline{1-4}
+\end{array}\\
+& \\
+&=
+t_1t_0t_3^2 - t_1t_0t_2t_3 - t_1t_0t_4t_3 + t_1t_0^2t_3 - t_1^2t_0t_3
+\end{align*}
+Hence we define
+\begin{align*}
+f_1(t_0,t_1,t_2,t_3,t_4) &\DEF x_1x_2\\
+& = t_1t_0t_3^2 - t_1t_0t_2t_3 - t_1t_0t_4t_3 + t_1t_0^2t_3 - t_1^2t_0t_3
+\end{align*}
+
+\subsubsection{Polynomial \(f_2\)}
+To get \(f_2\) we will straigntain following monomial
+\[
+t_2t_4 = 
+\begin{array}[c]{*{4}c}\cline{1-4}
+\lr{1}&\lr{1}&\lr{2}&\lr{3}\\\cline{1-4}
+\lr{2}&\lr{3}&\lr{5}&\lr{4}\\\cline{1-4}
+\lr{5}&\lr{4}\\\cline{1-2}
+\end{array}
+\]
+We will use following Pl\'{u}cker relations
+\begin{align*}
+\begin{array}[c]{*{2}c}\cline{1-2}
+\lr{1}&\lr{1}\\\cline{1-2}
+\lr{2}&\lr{3}\\\cline{1-2}
+\lr{5}&\lr{4}\\\cline{1-2}
+\end{array}
++\begin{array}[c]{*{2}c}\cline{1-2}
+\lr{1}&\lr{1}\\\cline{1-2}
+\lr{2}&\lr{4}\\\cline{1-2}
+\lr{3}&\lr{5}\\\cline{1-2}
+\end{array}
+-\begin{array}[c]{*{2}c}\cline{1-2}
+\lr{1}&\lr{1}\\\cline{1-2}
+\lr{2}&\lr{3}\\\cline{1-2}
+\lr{4}&\lr{5}\\\cline{1-2}
+\end{array}
+&=0 &&\cdots (\text{R1})\\
+\begin{array}[c]{*{2}c}\cline{1-2}
+\lr{2}&\lr{3}\\\cline{1-2}
+\lr{5}&\lr{4}\\\cline{1-2}
+\end{array}
+-\begin{array}[c]{*{2}c}\cline{1-2}
+\lr{2}&\lr{3}\\\cline{1-2}
+\lr{4}&\lr{5}\\\cline{1-2}
+\end{array}
++\begin{array}[c]{*{2}c}\cline{1-2}
+\lr{2}&\lr{4}\\\cline{1-2}
+\lr{3}&\lr{5}\\\cline{1-2}
+\end{array}
+&=0 &&\cdots (\text{R2})\\
+\begin{array}[c]{*{2}c}\cline{1-2}
+\lr{1}&\lr{2}\\\cline{1-2}
+\lr{4}&\lr{3}\\\cline{1-2}
+\lr{5}\\\cline{1-1}
+\end{array}
+-\begin{array}[c]{*{2}c}\cline{1-2}
+\lr{1}&\lr{2}\\\cline{1-2}
+\lr{3}&\lr{4}\\\cline{1-2}
+\lr{5}\\\cline{1-1}
+\end{array}
++\begin{array}[c]{*{2}c}\cline{1-2}
+\lr{1}&\lr{3}\\\cline{1-2}
+\lr{2}&\lr{4}\\\cline{1-2}
+\lr{5}\\\cline{1-1}
+\end{array}
++\begin{array}[c]{*{2}c}\cline{1-2}
+\lr{1}&\lr{2}\\\cline{1-2}
+\lr{3}&\lr{5}\\\cline{1-2}
+\lr{4}\\\cline{1-1}
+\end{array}
+-\begin{array}[c]{*{2}c}\cline{1-2}
+\lr{1}&\lr{3}\\\cline{1-2}
+\lr{2}&\lr{5}\\\cline{1-2}
+\lr{4}\\\cline{1-1}
+\end{array}
++\begin{array}[c]{*{2}c}\cline{1-2}
+\lr{1}&\lr{4}\\\cline{1-2}
+\lr{2}&\lr{5}\\\cline{1-2}
+\lr{3}\\\cline{1-1}
+\end{array}
+&=0 &&\cdots (\text{R3})
+\end{align*}
+We get
+\begin{align*}
+t_2t_4 &= 
+\begin{array}[c]{*{4}c}\cline{1-4}
+\lr{1}&\lr{1}&\lr{2}&\lr{3}\\\cline{1-4}
+\lr{2}&\lr{3}&\lr{5}&\lr{4}\\\cline{1-4}
+\lr{5}&\lr{4}\\\cline{1-2}
+\end{array}\\
+&=
+-\begin{array}[c]{*{4}c}\cline{1-4}
+\lr{1}&\lr{1}&\lr{2}&\lr{3}\\\cline{1-4}
+\lr{2}&\lr{4}&\lr{5}&\lr{4}\\\cline{1-4}
+\lr{3}&\lr{5}\\\cline{1-2}
+\end{array}
++\begin{array}[c]{*{4}c}\cline{1-4}
+\lr{1}&\lr{1}&\lr{2}&\lr{3}\\\cline{1-4}
+\lr{2}&\lr{3}&\lr{5}&\lr{4}\\\cline{1-4}
+\lr{4}&\lr{5}\\\cline{1-2}
+\end{array}
+&&\cdots (\text{After applying R1})
+\\
+&=
+\begin{array}[c]{*{4}c}\cline{1-4}
+\lr{1}&\lr{1}&\lr{2}&\lr{3}\\\cline{1-4}
+\lr{2}&\lr{3}&\lr{5}&\lr{4}\\\cline{1-4}
+\lr{4}&\lr{5}\\\cline{1-2}
+\end{array}
+-\begin{array}[c]{*{4}c}\cline{1-4}
+\lr{1}&\lr{1}&\lr{2}&\lr{3}\\\cline{1-4}
+\lr{2}&\lr{4}&\lr{4}&\lr{5}\\\cline{1-4}
+\lr{3}&\lr{5}\\\cline{1-2}
+\end{array}
++\begin{array}[c]{*{4}c}\cline{1-4}
+\lr{1}&\lr{1}&\lr{2}&\lr{4}\\\cline{1-4}
+\lr{2}&\lr{4}&\lr{3}&\lr{5}\\\cline{1-4}
+\lr{3}&\lr{5}\\\cline{1-2}
+\end{array}
+&&\cdots (\text{Term 1, Apply R2})
+\\
+&=
+-\begin{array}[c]{*{4}c}\cline{1-4}
+\lr{1}&\lr{1}&\lr{2}&\lr{3}\\\cline{1-4}
+\lr{2}&\lr{4}&\lr{4}&\lr{5}\\\cline{1-4}
+\lr{3}&\lr{5}\\\cline{1-2}
+\end{array}
++\begin{array}[c]{*{4}c}\cline{1-4}
+\lr{1}&\lr{1}&\lr{2}&\lr{4}\\\cline{1-4}
+\lr{2}&\lr{4}&\lr{3}&\lr{5}\\\cline{1-4}
+\lr{3}&\lr{5}\\\cline{1-2}
+\end{array}
++\begin{array}[c]{*{4}c}\cline{1-4}
+\lr{1}&\lr{1}&\lr{2}&\lr{3}\\\cline{1-4}
+\lr{2}&\lr{3}&\lr{4}&\lr{5}\\\cline{1-4}
+\lr{4}&\lr{5}\\\cline{1-2}
+\end{array}
+-\begin{array}[c]{*{4}c}\cline{1-4}
+\lr{1}&\lr{1}&\lr{2}&\lr{4}\\\cline{1-4}
+\lr{2}&\lr{3}&\lr{3}&\lr{5}\\\cline{1-4}
+\lr{4}&\lr{5}\\\cline{1-2}
+\end{array}
+&&\cdots (\text{Term 1, Apply R2})
+\\
+&=
+-\begin{array}[c]{*{4}c}\cline{1-4}
+\lr{1}&\lr{1}&\lr{2}&\lr{3}\\\cline{1-4}
+\lr{2}&\lr{4}&\lr{4}&\lr{5}\\\cline{1-4}
+\lr{3}&\lr{5}\\\cline{1-2}
+\end{array}
++\begin{array}[c]{*{4}c}\cline{1-4}
+\lr{1}&\lr{1}&\lr{2}&\lr{3}\\\cline{1-4}
+\lr{2}&\lr{3}&\lr{4}&\lr{5}\\\cline{1-4}
+\lr{4}&\lr{5}\\\cline{1-2}
+\end{array}
+-\begin{array}[c]{*{4}c}\cline{1-4}
+\lr{1}&\lr{1}&\lr{2}&\lr{4}\\\cline{1-4}
+\lr{2}&\lr{3}&\lr{3}&\lr{5}\\\cline{1-4}
+\lr{4}&\lr{5}\\\cline{1-2}
+\end{array}
++\begin{array}[c]{*{4}c}\cline{1-4}
+\lr{1}&\lr{1}&\lr{2}&\lr{4}\\\cline{1-4}
+\lr{2}&\lr{3}&\lr{4}&\lr{5}\\\cline{1-4}
+\lr{3}&\lr{5}\\\cline{1-2}
+\end{array}
+\\
+&\hspace{70pt}
+-\begin{array}[c]{*{4}c}\cline{1-4}
+\lr{1}&\lr{1}&\lr{3}&\lr{4}\\\cline{1-4}
+\lr{2}&\lr{2}&\lr{4}&\lr{5}\\\cline{1-4}
+\lr{3}&\lr{5}\\\cline{1-2}
+\end{array}
+-\begin{array}[c]{*{4}c}\cline{1-4}
+\lr{1}&\lr{1}&\lr{2}&\lr{4}\\\cline{1-4}
+\lr{2}&\lr{3}&\lr{5}&\lr{5}\\\cline{1-4}
+\lr{3}&\lr{4}\\\cline{1-2}
+\end{array}
++\begin{array}[c]{*{4}c}\cline{1-4}
+\lr{1}&\lr{1}&\lr{3}&\lr{4}\\\cline{1-4}
+\lr{2}&\lr{2}&\lr{5}&\lr{5}\\\cline{1-4}
+\lr{3}&\lr{4}\\\cline{1-2}
+\end{array}
+-\begin{array}[c]{*{4}c}\cline{1-4}
+\lr{1}&\lr{1}&\lr{4}&\lr{4}\\\cline{1-4}
+\lr{2}&\lr{2}&\lr{5}&\lr{5}\\\cline{1-4}
+\lr{3}&\lr{3}\\\cline{1-2}
+\end{array}
+\\
+& &&\cdots (\text{Term 2, Apply R3})\\
+&=
+-x_2 + t_0t_3 - x_1 + t_1t_3 - t_1t_2 - t_1t_4 + t_1t_0 - t_1^2
+\end{align*}
+
+Define \(f_2\) as follows
+\begin{align*}
+    f_2(t_0,t_1,t_2,t_3,t_4) &\DEF x_1 + x_2\\ 
+    & = - t_2t_4 + t_0t_3 + t_1t_3 - t_1t_2 - t_1t_4 + t_1t_0 - t_1^2
+\end{align*}

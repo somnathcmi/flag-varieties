@@ -1,0 +1,103 @@
+\begin{thebibliography}{GGMS87}
+
+\bibitem[BKS20]{bakshi2020torus}
+Sarjick Bakshi, S.~Senthamarai Kannan, and K.~Venkata Subrahmanyam.
+\newblock Torus quotients of {R}ichardson varieties in the {G}rassmannian.
+\newblock {\em Communications in Algebra}, 48(2):891--914, 2020.
+
+\bibitem[GGMS87]{gelfand1987combinatorial}
+Israel~M Gelfand, R~Mark Goresky, Robert~D MacPherson, and Vera~V Serganova.
+\newblock Combinatorial geometries, convex polyhedra, and {S}chubert cells.
+\newblock {\em Advances in Mathematics}, 63(3):301--316, 1987.
+
+\bibitem[GM82]{gelfand1982geometry}
+IM~Gelfand and RD~MacPherson.
+\newblock Geometry in {G}rassmannians and a generalization of the dilogarithm.
+\newblock {\em Advances in mathematics}, 44(3):279--312, 1982.
+
+\bibitem[Har77]{hart1977alggeo}
+Robin Hartshorne.
+\newblock {\em Algebraic Geometry}.
+\newblock Springer Science \& Business Media, 1977.
+
+\bibitem[Hem02]{hemmecke2002computation}
+Raymond Hemmecke.
+\newblock On the computation of {H}ilbert bases of cones.
+\newblock In {\em Mathematical software}, pages 307--317. World Scientific,
+  2002.
+
+\bibitem[HK97]{hausmann1997polygon}
+Jean~Claude Hausmann and Allen Knutson.
+\newblock Polygon spaces and {G}rassmannians.
+\newblock {\em Mathematical Teaching}, 43, 1997.
+
+\bibitem[HMSV05]{howard2005projective}
+Benjamin~J Howard, John Millson, Andrew Snowden, and Ravi Vakil.
+\newblock The projective invariants of ordered points on the line.
+\newblock {\em arXiv preprint math/0505096}, 2005.
+
+\bibitem[How05]{howard2005matroids}
+Benjamin~J Howard.
+\newblock Matroids and geometric invariant theory of torus actions on flag
+  spaces.
+\newblock {\em arXiv preprint math/0511608}, 2005.
+
+\bibitem[Hum75]{hum1975linearalggroups}
+James Humphreys.
+\newblock {\em Linear Algebraic Groups}.
+\newblock Springer, 1975.
+
+\bibitem[Kan98]{kannan1998torus}
+S.~Senthamarai Kannan.
+\newblock Torus quotients of homogeneous spaces.
+\newblock {\em Proceedings Mathematical Sciences}, 108(1):1--12, 1998.
+
+\bibitem[KPPU18]{kannan2018torus}
+S.~Senthamarai Kannan, K~Paramasamy, S.~K. Pattanayak, and Shyamashree
+  Upadhyay.
+\newblock Torus quotients of {R}ichardson varieties.
+\newblock {\em Communications in Algebra}, 46(1):254--261, 2018.
+
+\bibitem[KS09]{kannan2009torusA}
+S.~Senthamarai Kannan and Pranab Sardar.
+\newblock Torus quotients of homogeneous spaces of the general linear group and
+  the standard representation of certain symmetric groups.
+\newblock {\em Proceedings-Mathematical Sciences}, 119(1):81, 2009.
+
+\bibitem[Kum08]{kumar2008descent}
+Shrawan Kumar.
+\newblock Descent of line bundles to {GIT} quotients of flag varieties by
+  maximal torus.
+\newblock {\em Transformation groups}, 13(3-4):757--771, 2008.
+
+\bibitem[LB15]{lakshmibai2015grassbook}
+V.~Lakshmaibai and Justin Brown.
+\newblock {\em The {G}rassmannian Variety}.
+\newblock Springer, 2015.
+
+\bibitem[LR07]{lakshmibai2007standard}
+V.~Lakshmibai and K.~N. Raghavan.
+\newblock {\em Standard monomial theory: invariant theoretic approach}, volume
+  137.
+\newblock Springer Science \& Business Media, 2007.
+
+\bibitem[Sch98]{schrijver1998theory}
+Alexander Schrijver.
+\newblock {\em Theory linear and integer programming}.
+\newblock John Wiley \& Sons, 1998.
+
+\bibitem[Ses07]{seshadriintroduction}
+C.~S. Seshadri.
+\newblock Introduction to the theory of standard monomials, with notes by
+  {P}eter {L}ittelmann and {P}radeep {S}hukla, {A}ppendix {A} by {V.}
+  {L}akshmibai.
+\newblock {\em Revised reprint of lectures published in the Brandeis Lecture
+  Notes series, Hindustan Book Agency}, 2007.
+
+\bibitem[Sko93]{skorobogatov1993swinnerton}
+Alexei~N Skorobogatov.
+\newblock On {S}winnerton-{D}yer.
+\newblock In {\em Annales de la facult{\'e} des sciences de Toulouse},
+  volume~2, 1993.
+
+\end{thebibliography}

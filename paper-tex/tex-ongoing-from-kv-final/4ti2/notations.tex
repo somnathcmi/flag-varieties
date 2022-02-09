@@ -1,0 +1,94 @@
+
+\newcommand\notations
+{
+    \subsection{Notations}
+
+    We will start with few notations required along the way. 
+    Let \(\SC = p_1< \cdots < p_l\) be a chain in Bruhat poset. 
+    Denote by \(STab(r,n,\SC)\) the set of all torus-invariant tableaux in chain \(\SC\).
+    \begin{enumerate}
+        \item For \(p \in \SC\) denote by \(u_p\), 
+            the \(n\)-dimentional indicator vector defined as follows:
+            For \(1 \le i \le n\), \(u_p(i)\) is defined as follows:
+            \[
+                u_p(i) = \left\{
+                \begin{array}{lr}
+                    1 & i \in p\\
+                    0 & i \not\in p\\
+                \end{array}\right.
+            \]
+            Here tuple \(p\) is treated as set.
+        \item We will construct matrix \(A'\) of order \( n \times l \). 
+            Entries of \(A'\) are indexed by tuple \((i,p)\) where \(1 \le i \le n\) and 
+            \(p \in \SC\).
+            \(A'\) is constructed as follows:
+            \[
+                A'_{(i,p)} = \left. 
+                \begin{array}{c}
+                    u_p(i)
+                \end{array} \right.
+            \]
+            We call \(A'\) the indicator matrix of chain \(\SC\). 
+            Note that \(p^{th}\) column of \(A'\) is \(u_p\), the indicator vector of \(p\in\SC\).
+        \item Let \(w \in \IR^n\) be a vector defined as follows:
+            \[
+                w = \left[
+                \begin{array}{c}
+                    -r \\
+                    -r \\
+                    \vdots \\
+                    -r \\
+                \end{array} \right]
+            \]
+            We construct one more matrix denoted by \(A\), defined by
+            \[ A = [A'|w]. \]
+            Call this matrix the augmented indicator matrix of chain \(\SC\).
+            Let \(P_{\SC} = ker(A)_{_{\ge 0}}\).
+        \item For column-standard tableau \(S\) whose columns are in \(\SC\),
+            define a column vector \(v'_{_S}\) of length \(l\), 
+            indexed by set \([l]\) (or \(\SC\)), as follows:
+            \[
+                v'_{_S}(i) = \left.
+                \begin{array}{lr}
+                    \text{number of times }p_i\text{ appear in }S\text{ as column} 
+                \end{array}\right.
+            \]
+            Observe that:
+            \begin{enumerate}
+                \item For \(p \in \SC\), \(v'_{p}(q) = \delta_{pq}\).
+                \item If \(S\) and \(T\) are two tableaux and \(ST\) is tableau obtained 
+                    by appending \(T\) to \(S\), then
+                    \[v'_{_{ST}} = v'_{_S} + v'_{_T}.\]
+            \end{enumerate}
+        \item For torus-invarient semi-standard tableau \(S\) in \(\SC\), 
+            define a column vector \(v_{_S}\) of length \(l+1\), 
+            indexed by set \([l+1]\), as follows:
+            \[
+                v_{_S}(i) = \left\{
+                \begin{array}{lr}
+                    v'_{_S}(i)          & i \le l\\
+                    \text{degree of }S  & i = l+1 
+                \end{array}\right.
+            \]
+            \begin{enumerate}
+                \item If \(S\) and \(T\) are two tableaux and \(ST\) is tableau obtained 
+                    by appending \(T\) to \(S\), then
+                    \[v_{_{ST}} = v_{_S} + v_{_T}.\]
+            \end{enumerate}
+        \item For non-negative integer vector \(v = [u|d]^t \in \IR^{l+1}\) 
+            where \(u \in \IR^l,d \in \IR\), define tableau \(T^v\) such that
+            \[v'_{_{T^v}} = u\]
+        \item Weight of column-standard tableau \(S\), denoted by \(wt(S)\), 
+            is \(n\)-tuple \((a_1,...,a_n)\) such that \(i\) appear \(a_i\) times in \(S\).
+            We will think of \(wt(S)\) as vector in \(\IR^n\).
+            Observe that:
+            \begin{enumerate}
+                \item If \(S\) contain only one column \(p\) then 
+                    \[wt(S) = u_p.\]
+                \item If \(S\) and \(T\) are two tableaux and \(ST\) is tableau obtained 
+                    by appending \(T\) to \(S\), then
+                    \[wt(ST) = wt(S) + wt(T).\]
+                \item \(S\) is torus-invarient of degree \(d\) iff weight of \(S\) is \(-dw\).
+            \end{enumerate}
+    \end{enumerate}
+}

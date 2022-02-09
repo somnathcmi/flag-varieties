@@ -1,0 +1,174 @@
+%\input{lib}
+%\newcommand\notationss{
+    \section{T invariants and Hilbert basis of lattices in pointed cones}
+    We start with few notations and observations.
+
+    Let \(\lambda\eat{ = (\lambda_1^{r_1},...,\lambda_k^{r_k})} = \sum_{i=1}^k r_i \omega_\lambda_i \) be column shape of 
+    first graded component ring of \(T\)-invariants of Flag variety.
+    We are assuming column strictly increasing. 
+    Let \(I(\lambda,n) = \bigcup_{i=1}^k I(\lambda_i,n)\)\eat{, 
+    where \(I(\lambda_i,n) = \{(0<\alpha_1<\cdots<\alpha_{\lambda_i}) : \alpha_j \in [n]\}\)}.
+    Bruhat order on set \(I(\lambda,n)\) is defined as follows:
+    For \(\UL{p} \in I(\lambda_i,n), \UL{q} \in I(\lambda_j,n)\) define \(\UL{p} \le \UL{q}\)
+    if \(\lambda_i \ge \lambda_j\) and 
+    for \(1 \le l \le \lambda_j\) we have \(\UL{p}_l \le \UL{q}_l\).
+    Poset \((I(\lambda,n),\le)\) is called Bruhat poset.
+
+    Let \(\SC = \UL{p}_1 \le \cdots \le \UL{p}_l\) be a \eat{maximal }chain in Bruhat subposet.
+    We associate with every standard monomial, 
+    \(x_{\UL{p}_1}^{a_1} x_{\UL{p}_2}^{a_2} \cdots x_{\UL{p}_l}^{a_l}\),
+    a semistandard Young tableau \(S\)with column \(\UL{p}_i\) appearing \(a_i\) times, 
+    note that some of the \(a_i\)'s may be \(0\). 
+    Conversely, to every semistandard tableau with columns in \(\SC\) 
+    one can associate a standard monomial. 
+    Denote by \(\VEC{v}'_{_{S}}\) the degree vector \((a_1,\cdots,a_l)\). 
+    Observe that if \(T\) be another tableau whose columns are in \(\SC\) 
+    then \(\VEC{v}'_{_{ST}} = \VEC{v}'_{_S} + \VEC{v}'_{_T}\). 
+
+    Denote by \(STab(\lambda,n,\SC)\) the set of all \(T\)-invariant semistandard tableaux with 
+    each column is in \(\SC\), filling from \([n]\) and
+    column shape \((\lambda_1^{r_1d},\cdots,\lambda_k^{r_kd})\),
+    for some positive integer \(d\).
+    Weight vector of tableau \(S\) with filling from \([n]\) 
+    is \(n\)-dimentional vector  \(wt(S) \DEF (b_1,...,b_n)\) 
+    such that \(i\) appear \(b_i\) times in \(S\). 
+    Weight vector of any \(T\)-invariant tableau of shape \(\mu\) 
+    is \(\frac{|\mu|}{n}\VEC{1}\). Denote \(\VEC{w} \DEF \frac{|\lambda|}{n}\VEC{1}\)
+
+    Define the weight matrix \(A'_{\SC}\) for chain \(\SC\) whose entries are indexed by the set 
+    \([n] \times \SC\). 
+    For \((i,\UL{p}) \in [n] \times \SC\), 
+    \[
+        A'_{\SC}(i,\UL{p})=
+        \left\{\begin{array}{cc}
+            1  &  i \in \UL{p}\\
+            0  &  i \not \in \UL{p}
+        \end{array}\right.
+    \]
+    Note that the \(\UL{p}^{th}\) column of \(A'_{\SC}\) is \(wt(\UL{p})\).
+    Denote by \(A_{\SC}\) an augmented weight matrix \(A_{\SC} \DEF [A'_{\SC}|-\VEC{w}]\).
+
+    Define shape matrix \(B'_{\SC}\) for chain \(\SC\) whose entries are indexed by the set
+    \([k] \times \SC\).
+    Recall \(k\) is number of distinct lengths of columns in \(I(\lambda,n)\). 
+    \(B'_{\SC}\) is defined  as follows:
+    \[
+        B'_{\SC}(i,\UL{p})=
+        \left\{\begin{array}{cc}
+            1  &  |\UL{p}| = \lambda_i\\
+            0  &  |\UL{p}| \ne \lambda_i
+        \end{array}\right.
+    \]
+    Where \(|\UL{p}|\) is length of column \(\UL{p}\). Let \(\VEC{r} = (r_1,\cdots,r_k)\). 
+    Denote by \(B_{\SC}\) the augmented shape matrix \(B_{\SC} \DEF [B'_{\SC} | -\VEC{r}]\). 
+
+    \eat{Now let \(S\) be a tableau whose columns are in \(\SC\). 
+    We associate with \(S\) the vector \(\VEC{v}'_{_S}\) of dimension \(l\) 
+    whose \(i^{th}\) entry is the number of occurrences of \(\UL{p}_i\) in \(S\). }
+    Following two observations justify names of matrices \(A'_{\SC}\) and \(B'_{\SC}\).
+    \begin{observation}
+        Let \(S\) be a tableau whose columns are in \(\SC\). For \(i \in [n]\) we have
+        \(A'_{\SC}\VEC{v}'_{_S}(i)\) is number of columns in \(S\) which contain \(i\).
+        Hence we have \(wt(S) = A'\VEC{v}'_{_S}\).
+    \end{observation}
+    \begin{proof}
+        \[
+            A'_{\SC}\VEC{v}'_{_S}(i) 
+            = \sum_{\UL{p}_j \in \SC} A'_{\SC}(i,\UL{p}_j) \VEC{v}'_{_S}(j)
+            = \sum_{i \in \UL{p}_j} \VEC{v}'_{_S}(j).
+        \]
+    \end{proof}
+    \begin{observation}
+        Let \(S\) be a tableau whose columns are in \(\SC\). For \(i \in [k]\) we have
+        \(B'_{\SC}\VEC{v}'_{_S}(i)\) is number of columns in \(S\) of length \(\lambda_i\).
+        Hence the column shape of tableau \(S\) is 
+        \((\lambda_1^{B'_{\SC} \VEC{v}'_{_S}(1)}, \cdots,\lambda_k^{B'_{\SC}\VEC{v}'_{_S}(k)})\). 
+    \end{observation}
+    \begin{proof}
+        \[
+            B'_{\SC}\VEC{v}'_{_S}(i) 
+            = \sum_{\UL{p}_i \in \SC} B'_{\SC}(i,\UL{p}_i) \VEC{v}'_{_S}(i)
+            = \sum_{|\UL{p}_i| =\lambda_i} \VEC{v}'_{_S}(i).
+        \]
+    \end{proof}
+
+    If \(S \in STab(\lambda,n,\SC)\) then there is positive integer \(d\) 
+    such that \(wt(S) = d\VEC{w}\) and shape of \(S\) is 
+    \((\lambda_1^{r_1d},\cdots,\lambda_k^{r_kd})\).
+    For such tableau \(S\) associate vector \(\VEC{v}_{_S} \DEF (\VEC{v}'_{_S},d)\), 
+    the vector of length \(l+1\). 
+    \eat{If \(T\) is another tableau in \(STab(\lambda,n,\SC)\) 
+    then we have \(\VEC{v}_{_{ST}} = \VEC{v}_{_S} + \VEC{v}_{_T}\).}
+    From above two observations we have \(\VEC{v}_{_S} \in ker(A_{\SC}) \cap ker(B_{\SC})\).
+    Conversly we have: 
+    \begin{observation}
+        Let \(\VEC{x}=(\VEC{x}',d)\) be a nonzero non-negative integer vector 
+        in \(ker(A_{\SC})\cap ker(B_{\SC})\)
+        then there exist \(T_{x} \in STab(\lambda,n,\SC)\) 
+        such that \(\VEC{x}=\VEC{v}_{_{T_{\VEC{x}}}}\).
+    \end{observation}
+    \begin{proof}
+        Define tableau \(S\) such that, \(\UL{p}_i \in \SC\) appears \(x_i\) times.
+        Hence we have \(\VEC{x}' = \VEC{v}'_{_S}\).
+        Note since columns for \(S\) are from chain, \(S\) semistandard.
+        It remains to show that \(wt(S) = d\VEC{w}\) and 
+        column shape of \(S\) is \((\lambda_1^{r_1d} \cdots \lambda_k^{r_k d})\).
+        This follows from calculations below.
+        \[
+            A_{\SC}\VEC{x} = 0
+            \implies [A'_{\SC}|-\VEC{w}](\VEC{x}',d) = 0
+            \implies A'_{\SC}\VEC{x}' = d\VEC{w}
+            \implies wt(S) = d\VEC{w}.
+        \]
+        \[
+            B_{\SC}\VEC{x} = 0
+            \implies [B'_{\SC}|-\VEC{r}](\VEC{x}',d) = 0
+            \implies B'_{\SC}\VEC{x}' = d \VEC{r}.
+        \]
+    \end{proof}
+
+    Let \(P_{\SC} = ker(A_{\SC}) \cap ker(B_{\SC}) \cap \IR_{\ge 0}^{l+1}\). 
+    We have following corollary
+    \begin{corollary}
+        There is bijection between nonzero integral points in \(P_{\SC}\) 
+        and \(STab(\lambda,n,\SC)\), given by \(S \mapsto \VEC{v}_{_S}\), \(\VEC{x}\mapsto T_{x}\). 
+        We also have \(\VEC{v}_{_{ST}} = \VEC{v}_{_S} + \VEC{v}_{_T}\)
+    \end{corollary}
+    
+    \subsection{Examples}
+    \subsubsection{The Grassmannian \(\grass{3}{7}\)}
+        For the grassmannian \(\grass{3}{7}\) 
+        the shape of first graded component of ring of \(T\)-invariants is \(\lambda=(3^7)\)
+        then \(I(\lambda,n)=(I(3,7))\) of size \(35\). 
+        There are [465] chains in Bruhat poset \(I(3,7)\) 
+        with lowest element \([1,2,3]\) and top element \([5,6,7]\).
+        Also any maximal chain contain \(13\) elements. 
+        For fix maximal chain \(\SC\) below, the marix \(A'_{\SC}\) is of order \(7 \times 13\) and 
+        \(\VEC{w} = \frac{|\lambda|}{n} \VEC{1} = 3.\VEC{1} \).
+        The matrix \(B'_{\SC}\) is of order \(1 \times 13\).
+        We fix following maximal chain:
+        \input{examples/g37chain28ex} 
+        \input{examples/g37aug_mat_chain28ex}
+        Tableau Example in above chain is
+        \input{examples/g37hb0ex}
+    \subsubsection{Flag Varieties for \(n=5\)}
+        For the flag variety with
+        the shape of first graded component of ring of \(T\)-invariants is \(\lambda=(3,2)\)
+        we have \(I(\lambda,5)=I(3,5) \cup I(2,5)\) of size \([20]\). 
+        There are [42] chains in Bruhat poset \(I(\lambda,5)\) 
+        with lowest element \([1,2,3]\) and top element \([4,5]\).
+        Also any maximal chain contain \(10?\) elements. 
+        For fix maximal chain \(\SC\) below, the marix \(A'_{\SC}\) is of order \(5 \times 10\) and 
+        \(\VEC{w} = \frac{|\lambda|}{n} \VEC{1} = \VEC{1} \).
+        The matrix \(B'_{\SC}\) is of order \(2 \times 10\). 
+        \(A_{\SC}\) and \(B_{\SC}\) are of order \(5 \times 11\) and \(2 \times 11\) respectively.
+        We fix following maximal chain:
+        \input{examples/shape32chain0ex}
+        \input{examples/shape32aug_mat_chain0ex}
+        \input{examples/shape32shape_mat_chain0ex}
+        \input{examples/shape32hb0ex}
+%}
+%\begin{document}
+%\notationss
+%\end{document}
+

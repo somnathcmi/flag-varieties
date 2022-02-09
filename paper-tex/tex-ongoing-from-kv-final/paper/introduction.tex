@@ -1,0 +1,34 @@
+\section{Introduction}\label{s.Introduction}
+
+Let $X$ be a projective variety over ${\mathbb C}$. Let $T$ be an algebraic torus over ${\mathbb C}$ acting on $X$ and let ${\cal L}$ be a $T$-equivariant ample line bundle on $T$. A point $x$ in $X$ is said to be ${\cal L}$-semistable if there is a $T$-invariant section of a positive power of ${\cal L}$ that does not vanish at $p$.  The set of ${\cal L}$-semistable points of $X$ is denoted by $X^{ss}_T(\cal L)$. An ${\cal L}$-semistable point $p$ is said to be stable if  its stabilizer in $T$ is finite and the orbit of $p$ in  $X^{ss}_T(\cal L)$ is closed. 
+The GIT quotient of $X$ is defined to the categorical quotient of  $X^{ss}_T(\cal L)$ by $T$, in which two points are identified if the closures of their $T$-orbits intersect. We denote the GIT quotient of the polarized variety by $\LXmodT{\cal L}$.  
+
+
+\eat{A
+  Using a set of generators $f_1,\ldots,f_N$ for the ring of invariants, one defines a $G$ invariant regular map from $X$ to ${\mathbb C}^N$,
+by evaluating these polynomials at $x \in X$.  This gives a morphism from $V$ to an affine variety $Y$ in ${\mathbb C}^N$, whose coordinate ring is isomorphic to $R$.  This recipe also works for the action of a reductive algebraic group on a vector space. This follows from Nagata's theorem \cite{nagata1963invariants}, that if $G$ is a linear representation of reductive algebraic group on $V$ the ring of $G$-invariant polynomials is finitely generated.  The  inverse image of the origin in $Y$ is an affine variety in $V$ defined
+by the vanishing of homogeneous invariants of positive degree. Such points in $V$ are said to be unstable, and the complement of the unstable locus is said to be semistable. A point in $V$ is said to be stable if is is semistable, and its orbit (in the semistable locus) is closed and  the orbit has dimension equal to that of $G$. Since the action of $G$ on $V$ gives rise to an action of $G$ on projective space ${\mathbb P}(V)$, one could also ask for a description of the projective quotient. To construct the projective quotient one removes the set of unstable points. We then get a morphism from ${\mathbb P}(V)^{ss}_{G}$, the set of (images of) semistable points to a projective variety, the GIT quotient of ${\mathbb P}(V)^{ss}_{G}$, denoted $\VmodG$, whose homogeneous coordinate ring is isomorphic to $R$. 
+
+When $X$ is a normal projective algebraic variety with an action of a reductive algebraic group $G$, the recipe for constructing the quotient is similar, and was first given in \cite{mumford1994geometric}. In this case one can show that there is a linearization of this action. We get a $G$-equivariant embedding of $X$ in projective space ${\mathbb P}(V)$ with $G$ acting on $V$ linearly, as above. 
+Define $X^{ss} = X \cap {\mathbb P}(V)^{ss}_{G}$. Restricting  to $X^{ss}$, the morphism from ${\mathbb P}(V)^{ss}_{G}$ to $\VmodG$, we get a morphism $X^{ss}$ to its quotient, denoted
+$\XmodG$. To emphasize that the set of semistable points of $X$ the GIT quotient depend upon the chosen linearization ${\mathcal L}$, we use the notation $\LXmodG{\mathcal L}$. We use the notation $X^s_T({\mathcal L})$ to denote the set of stable  points in $X$ with respect to the polarization ${\mathcal L}$.
+
+}
+
+Let $G=SL(n)$  and $T$ be the subgroup of diagonal matrices in $G$. There is a natural action of $G$ on the $n$-dimensional vector space ${\mathbb C}^n$.  There is a natural action of $G$ on flags in ${\mathbb C}^n$. The motivating question of this paper is understanding the GIT quotient  of these flag varieties under the action of $T$. To describe the problem statements and our results we first introduce some notation.
+
+ \eat{and $B \supset T$, the group of upper triangular matrices.
+ The Grassmannian is a projective variety, and the $G$-action on the Grassmannian is $G$-linearized by the Pl\"{u}cker embedding of $\grass{r}{n}$ in ${\mathbb P}(\bigwedge^r {\mathbb C}^n)$. We denote this polarization by ${\mathcal L}(\omega_r)$ (see the next section for details). The main question we address in this paper is to describe the geometry of the GIT quotient of $\grass{r}{n}$ under the action of $T$, $\gmnmodt{r}{n}{\mathcal L (\omega_r)}$. Understanding the GIT quotient of the Grassmannian under the action of $T$ is a long standing open problem, see \cite{gelfand1987combinatorial}.  We show that the GIT quotient $\gmnmodt{3}{7}{\mathcal L (\omega_3)}$ is projectively normal. We do this by 
+computing the ring of invariants and showing that they are generated in degree 7. The proof is computational.
+\eat{For a comprehensive account of what is known about this problem in general, see the introduction in \cite{bakshi2020torus} and \cite{kannan2014git}.  In this paper we only deal with the type A case.
+}
+We then consider flag varieties in $G=SL(5,{\mathbb C})$. As before, let $T$ be the torus of diagonal matrices in $G$ and $B$ the Borel subgroup of upper triangular matrices. We consider varieties of the form where $X=SL(5,{\mathbb C})/Q$ where $Q$ is the intersection of two maximal parabolic subgroups in $G$. We describe the geometry of the GIT quotient of $X$ with respect to $T$ for some natural polarizations of $X$ in projective space. We have explicit proofs in some cases and in some cases our proof is computational.
+
+In \cite{skorobogatov1993swinnerton} Skorobogatov showed that when $r$ and $n$ are coprime then for the linearization ${\cal L}(\omega_r)$, semistability is the same as stability.  This was proved independently by Kannan \cite{kannan1998torus}. 
+We will assume this is the case throughout the paper since it makes the question easier. In \cite{howard2005projective} the authors studied the problem in the case $\grass{2}{n}$, $n$ even, and gave a description of the generators and relations for the quotient $\Lgmnmodt{2}{n}{{\mathcal L}(\omega_2)}$. In \cite{bakshi2020torus} the authors studied the same problem when $n$ is odd and showed the projective normality of the torus quotient of $\Lgmnmodt{2}{n}{{\mathcal L }(\omega_2)}$.
+Since an explicit description of the torus quotient of the Grassmannian is a difficult problem another fruitful approach has been studying the GIT quotient for Schubert varieties in $\grass{r}{n}$, initiated 
+in \cite{kannan2009torusA} and \cite{kannan2009torusB}. 
+
+We first recall necessary definitions in section 2 and and set up relevant notation.
+
+}

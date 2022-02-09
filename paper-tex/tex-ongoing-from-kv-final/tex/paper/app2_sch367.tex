@@ -1,0 +1,374 @@
+\section{The Schubert variety [367] in $\grass{3}{7}$}
+%\renewcommand{\thesubsection}{\Alph{subsection}}
+\label{sec:sch367}
+%START of macro ============
+
+We list of degree 2 tableaux which cannot be split directly.
+
+\begin{align*}
+    &t_0 = 
+\begin{array}[c]{*{14}c}\cline{1-14}
+\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{2}&\lr{2}&\lr{2}&\lr{3}&\lr{3}&\lr{3}&\lr{3}&\lr{3}\\\cline{1-14}
+\lr{2}&\lr{2}&\lr{2}&\lr{4}&\lr{4}&\lr{4}&\lr{4}&\lr{4}&\lr{4}&\lr{5}&\lr{5}&\lr{5}&\lr{5}&\lr{6}\\\cline{1-14}
+\lr{3}&\lr{5}&\lr{5}&\lr{6}&\lr{6}&\lr{6}&\lr{6}&\lr{6}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}\\\cline{1-14}
+\end{array}\hspace{30pt}
+    &t_1 = 
+\begin{array}[c]{*{14}c}\cline{1-14}
+\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{2}&\lr{2}&\lr{2}&\lr{3}&\lr{3}&\lr{3}&\lr{3}&\lr{3}\\\cline{1-14}
+\lr{2}&\lr{2}&\lr{2}&\lr{4}&\lr{4}&\lr{4}&\lr{4}&\lr{4}&\lr{4}&\lr{5}&\lr{5}&\lr{5}&\lr{5}&\lr{5}\\\cline{1-14}
+\lr{3}&\lr{5}&\lr{6}&\lr{6}&\lr{6}&\lr{6}&\lr{6}&\lr{6}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}\\\cline{1-14}
+\end{array}\\
+    &t_2 = \begin{array}[c]{*{14}c}\cline{1-14}
+\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{2}&\lr{2}&\lr{2}&\lr{3}&\lr{3}&\lr{3}&\lr{3}&\lr{3}\\\cline{1-14}
+\lr{2}&\lr{2}&\lr{2}&\lr{4}&\lr{4}&\lr{4}&\lr{4}&\lr{4}&\lr{4}&\lr{5}&\lr{6}&\lr{6}&\lr{6}&\lr{6}\\\cline{1-14}
+\lr{3}&\lr{5}&\lr{5}&\lr{5}&\lr{5}&\lr{5}&\lr{6}&\lr{6}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}\\\cline{1-14}
+\end{array}\hspace{30pt}
+    &t_3 = \begin{array}[c]{*{14}c}\cline{1-14}
+\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{2}&\lr{2}&\lr{2}&\lr{3}&\lr{3}&\lr{3}&\lr{3}&\lr{3}\\\cline{1-14}
+\lr{2}&\lr{2}&\lr{2}&\lr{4}&\lr{4}&\lr{4}&\lr{4}&\lr{4}&\lr{4}&\lr{5}&\lr{5}&\lr{6}&\lr{6}&\lr{6}\\\cline{1-14}
+\lr{3}&\lr{5}&\lr{5}&\lr{5}&\lr{5}&\lr{6}&\lr{6}&\lr{6}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}\\\cline{1-14}
+\end{array}\\
+    &t_4 = \begin{array}[c]{*{14}c}\cline{1-14}
+\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{2}&\lr{2}&\lr{2}&\lr{3}&\lr{3}&\lr{3}&\lr{3}&\lr{3}\\\cline{1-14}
+\lr{2}&\lr{2}&\lr{2}&\lr{4}&\lr{4}&\lr{4}&\lr{4}&\lr{4}&\lr{4}&\lr{5}&\lr{5}&\lr{5}&\lr{6}&\lr{6}\\\cline{1-14}
+\lr{3}&\lr{5}&\lr{5}&\lr{5}&\lr{6}&\lr{6}&\lr{6}&\lr{6}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}\\\cline{1-14}
+\end{array}\hspace{30pt}
+    &t_5 = \begin{array}[c]{*{14}c}\cline{1-14}
+\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{2}&\lr{2}&\lr{2}&\lr{3}&\lr{3}&\lr{3}&\lr{3}&\lr{3}\\\cline{1-14}
+\lr{2}&\lr{2}&\lr{2}&\lr{4}&\lr{4}&\lr{4}&\lr{4}&\lr{4}&\lr{4}&\lr{6}&\lr{6}&\lr{6}&\lr{6}&\lr{6}\\\cline{1-14}
+\lr{3}&\lr{5}&\lr{5}&\lr{5}&\lr{5}&\lr{5}&\lr{5}&\lr{6}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}\\\cline{1-14}
+\end{array}\\
+    &t_6 = \begin{array}[c]{*{14}c}\cline{1-14}
+\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{2}&\lr{2}&\lr{2}&\lr{3}&\lr{3}&\lr{3}&\lr{3}&\lr{3}\\\cline{1-14}
+\lr{2}&\lr{2}&\lr{2}&\lr{4}&\lr{4}&\lr{4}&\lr{4}&\lr{5}&\lr{5}&\lr{6}&\lr{6}&\lr{6}&\lr{6}&\lr{6}\\\cline{1-14}
+\lr{3}&\lr{4}&\lr{4}&\lr{5}&\lr{5}&\lr{5}&\lr{5}&\lr{6}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}\\\cline{1-14}
+\end{array}\hspace{30pt}
+    &t_7 = \begin{array}[c]{*{14}c}\cline{1-14}
+\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{2}&\lr{2}&\lr{2}&\lr{3}&\lr{3}&\lr{3}&\lr{3}&\lr{3}\\\cline{1-14}
+\lr{2}&\lr{2}&\lr{2}&\lr{3}&\lr{4}&\lr{4}&\lr{4}&\lr{5}&\lr{5}&\lr{6}&\lr{6}&\lr{6}&\lr{6}&\lr{6}\\\cline{1-14}
+\lr{4}&\lr{4}&\lr{4}&\lr{5}&\lr{5}&\lr{5}&\lr{5}&\lr{6}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}\\\cline{1-14}
+\end{array}
+\end{align*}
+
+\subsection{Factoring \(t_0,t_3,t_4\)}
+We will use the  following Pl\"{u}cker relation:
+\begin{align*}
+R_1 :\ \ \ 0 = 
+\begin{array}[c]{*{2}c}\cline{1-2}
+\lr{2}&\lr{3}\\\cline{1-2}
+\lr{5}&\lr{4}\\\cline{1-2}
+\lr{7}&\lr{7}\\\cline{1-2}
+\end{array}
+\ -\ 
+\begin{array}[c]{*{2}c}\cline{1-2}
+\lr{2}&\lr{3}\\\cline{1-2}
+\lr{4}&\lr{5}\\\cline{1-2}
+\lr{7}&\lr{7}\\\cline{1-2}
+\end{array}
+\ +\ 
+\begin{array}[c]{*{2}c}\cline{1-2}
+\lr{2}&\lr{4}\\\cline{1-2}
+\lr{3}&\lr{5}\\\cline{1-2}
+\lr{7}&\lr{7}\\\cline{1-2}
+\end{array}
+\end{align*}
+On  the Schubert variety \([3,6,7]\) the last monomial in the above relation is \(0\).
+
+Applying \(R_1\) on \(t_0,t_3,t_4\)  we get
+\[
+    t_0\ =\ 
+\begin{array}[c]{*{14}c}\cline{1-14}
+\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{2}&\lr{2}&\lr{2}&\lr{3}&\lr{3}&\lr{3}&\lr{3}&\lr{3}\\\cline{1-14}
+\lr{2}&\lr{2}&\lr{2}&\lr{4}&\lr{4}&\lr{4}&\lr{4}&\lr{4}&\lr{5}&\lr{4}&\lr{5}&\lr{5}&\lr{5}&\lr{6}\\\cline{1-14}
+\lr{3}&\lr{5}&\lr{5}&\lr{6}&\lr{6}&\lr{6}&\lr{6}&\lr{6}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}\\\cline{1-14}
+\end{array}
+\]
+\[   
+t_3\ =\ 
+\begin{array}[c]{*{14}c}\cline{1-14}
+\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{2}&\lr{2}&\lr{2}&\lr{3}&\lr{3}&\lr{3}&\lr{3}&\lr{3}\\\cline{1-14}
+\lr{2}&\lr{2}&\lr{2}&\lr{4}&\lr{4}&\lr{4}&\lr{4}&\lr{4}&\lr{5}&\lr{4}&\lr{5}&\lr{6}&\lr{6}&\lr{6}\\\cline{1-14}
+\lr{3}&\lr{5}&\lr{5}&\lr{5}&\lr{5}&\lr{6}&\lr{6}&\lr{6}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}\\\cline{1-14}
+\end{array}
+\]
+\[
+t_4\ =\ 
+\begin{array}[c]{*{14}c}\cline{1-14}
+\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{2}&\lr{2}&\lr{2}&\lr{3}&\lr{3}&\lr{3}&\lr{3}&\lr{3}\\\cline{1-14}
+\lr{2}&\lr{2}&\lr{2}&\lr{4}&\lr{4}&\lr{4}&\lr{4}&\lr{4}&\lr{5}&\lr{4}&\lr{5}&\lr{5}&\lr{6}&\lr{6}\\\cline{1-14}
+\lr{3}&\lr{5}&\lr{5}&\lr{5}&\lr{6}&\lr{6}&\lr{6}&\lr{6}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}\\\cline{1-14}
+\end{array}
+\]
+
+Note that the following $T$-invariant tableau is a factor of all of the above tableaux
+\[
+f_{034}\ =\ 
+\begin{array}[c]{*{7}c}\cline{1-7}
+\lr{1}&\lr{1}&\lr{1}&\lr{2}&\lr{3}&\lr{3}&\lr{3}\\\cline{1-7}
+\lr{2}&\lr{2}&\lr{4}&\lr{4}&\lr{4}&\lr{5}&\lr{6}\\\cline{1-7}
+\lr{5}&\lr{5}&\lr{6}&\lr{6}&\lr{7}&\lr{7}&\lr{7}\\\cline{1-7}
+\end{array}
+\]
+
+\subsection{Factoring \(t_2\)}
+We will use the following Pl\"{u}cker relation.
+\begin{align*}
+R_2 :\ \ \ 0 = 
+\begin{array}[c]{*{2}c}\cline{1-2}
+\lr{2}&\lr{3}\\\cline{1-2}
+\lr{6}&\lr{4}\\\cline{1-2}
+\lr{7}&\lr{7}\\\cline{1-2}
+\end{array}
+\ -\ 
+\begin{array}[c]{*{2}c}\cline{1-2}
+\lr{2}&\lr{3}\\\cline{1-2}
+\lr{4}&\lr{6}\\\cline{1-2}
+\lr{7}&\lr{7}\\\cline{1-2}
+\end{array}
+\ +\ 
+\begin{array}[c]{*{2}c}\cline{1-2}
+\lr{2}&\lr{4}\\\cline{1-2}
+\lr{3}&\lr{6}\\\cline{1-2}
+\lr{7}&\lr{7}\\\cline{1-2}
+\end{array}
+\end{align*}
+On \([3,6,7]\) the last monomial is \(0\).
+
+Applying \(R_2\) on \(t_2\) we get
+\begin{align*}
+t_2\ =\ 
+\begin{array}[c]{*{14}c}\cline{1-14}
+\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{2}&\lr{2}&\lr{2}&\lr{3}&\lr{3}&\lr{3}&\lr{3}&\lr{3}\\\cline{1-14}
+\lr{2}&\lr{2}&\lr{2}&\lr{4}&\lr{4}&\lr{4}&\lr{4}&\lr{4}&\lr{6}&\lr{5}&\lr{4}&\lr{6}&\lr{6}&\lr{6}\\\cline{1-14}
+\lr{3}&\lr{5}&\lr{5}&\lr{5}&\lr{5}&\lr{5}&\lr{6}&\lr{6}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}\\\cline{1-14}
+\end{array}
+\end{align*}
+Note that the following $T$-invariant tableau is a factor of above tableau:
+\[
+f_{034}\ =\ \begin{array}[c]{*{7}c}\cline{1-7}
+\lr{1}&\lr{1}&\lr{1}&\lr{2}&\lr{3}&\lr{3}&\lr{3}\\\cline{1-7}
+\lr{2}&\lr{2}&\lr{4}&\lr{4}&\lr{4}&\lr{6}&\lr{6}\\\cline{1-7}
+\lr{5}&\lr{5}&\lr{5}&\lr{6}&\lr{7}&\lr{7}&\lr{7}\\\cline{1-7}
+\end{array}
+\]
+
+\subsection{Factoring \(t_5\)}
+We use the following Pl\"{u}cker relation:
+\begin{align*}
+R_3:\ \ \ 0 = 
+\begin{array}[c]{*{2}c}\cline{1-2}
+\lr{2}&\lr{3}\\\cline{1-2}
+\lr{5}&\lr{4}\\\cline{1-2}
+\lr{6}&\lr{7}\\\cline{1-2}
+\end{array}
+\ -\ 
+\begin{array}[c]{*{2}c}\cline{1-2}
+\lr{2}&\lr{3}\\\cline{1-2}
+\lr{4}&\lr{5}\\\cline{1-2}
+\lr{6}&\lr{7}\\\cline{1-2}
+\end{array}
+\ +\ 
+\begin{array}[c]{*{2}c}\cline{1-2}
+\lr{2}&\lr{4}\\\cline{1-2}
+\lr{3}&\lr{5}\\\cline{1-2}
+\lr{6}&\lr{7}\\\cline{1-2}
+\end{array}
+\ -\ 
+\begin{array}[c]{*{2}c}\cline{1-2}
+\lr{2}&\lr{4}\\\cline{1-2}
+\lr{3}&\lr{6}\\\cline{1-2}
+\lr{5}&\lr{7}\\\cline{1-2}
+\end{array}
+\ +\ 
+\begin{array}[c]{*{2}c}\cline{1-2}
+\lr{2}&\lr{3}\\\cline{1-2}
+\lr{4}&\lr{6}\\\cline{1-2}
+\lr{5}&\lr{7}\\\cline{1-2}
+\end{array}
+\ +\ 
+\begin{array}[c]{*{2}c}\cline{1-2}
+\lr{2}&\lr{5}\\\cline{1-2}
+\lr{3}&\lr{6}\\\cline{1-2}
+\lr{4}&\lr{7}\\\cline{1-2}
+\end{array}
+\end{align*}
+Observe that the \(3^{rd},4^{th}\) and \(6^{th}\) monomials are \(0\) on [3,6,7].
+Hence after multiplying following tableau  
+\begin{align*}
+\begin{array}[c]{*{14}c}\cline{1-14}
+\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{}&\lr{2}&\lr{2}&\lr{}&\lr{3}&\lr{3}&\lr{3}&\lr{3}\\\cline{1-14}
+\lr{2}&\lr{2}&\lr{2}&\lr{4}&\lr{4}&\lr{4}&\lr{}&\lr{4}&\lr{4}&\lr{}&\lr{6}&\lr{6}&\lr{6}&\lr{6}\\\cline{1-14}
+\lr{3}&\lr{5}&\lr{5}&\lr{5}&\lr{5}&\lr{5}&\lr{}&\lr{6}&\lr{7}&\lr{}&\lr{7}&\lr{7}&\lr{7}&\lr{7}\\\cline{1-14}
+\end{array}
+\end{align*}
+to the above relation (i.e. substituting the relation in the empty columns of the tableau above) we get 
+\begin{align*}
+&\begin{array}[c]{*{14}c}\cline{1-14}
+\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{2}&\lr{2}&\lr{2}&\lr{3}&\lr{3}&\lr{3}&\lr{3}&\lr{3}\\\cline{1-14}
+\lr{2}&\lr{2}&\lr{2}&\lr{4}&\lr{4}&\lr{4}&\lr{5}&\lr{4}&\lr{4}&\lr{4}&\lr{6}&\lr{6}&\lr{6}&\lr{6}\\\cline{1-14}
+\lr{3}&\lr{5}&\lr{5}&\lr{5}&\lr{5}&\lr{5}&\lr{6}&\lr{6}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}\\\cline{1-14}
+\end{array}\\
+&\hspace{20pt}\ =\ 
+\begin{array}[c]{*{14}c}\cline{1-14}
+\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{2}&\lr{2}&\lr{2}&\lr{3}&\lr{3}&\lr{3}&\lr{3}&\lr{3}\\\cline{1-14}
+\lr{2}&\lr{2}&\lr{2}&\lr{4}&\lr{4}&\lr{4}&\lr{4}&\lr{4}&\lr{4}&\lr{5}&\lr{6}&\lr{6}&\lr{6}&\lr{6}\\\cline{1-14}
+\lr{3}&\lr{5}&\lr{5}&\lr{5}&\lr{5}&\lr{5}&\lr{6}&\lr{6}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}\\\cline{1-14}
+\end{array}
+\ -\ 
+\begin{array}[c]{*{14}c}\cline{1-14}
+\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{2}&\lr{2}&\lr{2}&\lr{3}&\lr{3}&\lr{3}&\lr{3}&\lr{3}\\\cline{1-14}
+\lr{2}&\lr{2}&\lr{2}&\lr{4}&\lr{4}&\lr{4}&\lr{4}&\lr{4}&\lr{4}&\lr{6}&\lr{6}&\lr{6}&\lr{6}&\lr{6}\\\cline{1-14}
+\lr{3}&\lr{5}&\lr{5}&\lr{5}&\lr{5}&\lr{5}&\lr{5}&\lr{6}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}\\\cline{1-14}
+\end{array}
+= t_2 - t_5. 
+\end{align*}
+Observe that following is a factor of the left hand side tableau 
+\[
+f_5\ =\ 
+\begin{array}[c]{*{7}c}\cline{1-7}
+\lr{1}&\lr{1}&\lr{1}&\lr{2}&\lr{3}&\lr{3}&\lr{3}\\\cline{1-7}
+\lr{2}&\lr{2}&\lr{4}&\lr{4}&\lr{4}&\lr{6}&\lr{6}\\\cline{1-7}
+\lr{5}&\lr{5}&\lr{5}&\lr{6}&\lr{7}&\lr{7}&\lr{7}\\\cline{1-7}
+\end{array}
+\]
+Hence \(t_5\) factored.
+
+\subsection{Factoring \(t_7\)}
+We will use the following Pl\"{u}cker relation:
+\[
+R_4:\ \ \ 0\ =\ 
+\begin{array}[c]{*{2}c}\cline{1-2}
+\lr{1}&\lr{3}\\\cline{1-2}
+\lr{3}&\lr{5}\\\cline{1-2}
+\lr{7}&\lr{6}\\\cline{1-2}
+\end{array}
+\ -\ 
+\begin{array}[c]{*{2}c}\cline{1-2}
+\lr{1}&\lr{3}\\\cline{1-2}
+\lr{3}&\lr{5}\\\cline{1-2}
+\lr{6}&\lr{7}\\\cline{1-2}
+\end{array}
+\ +\ 
+\begin{array}[c]{*{2}c}\cline{1-2}
+\lr{1}&\lr{3}\\\cline{1-2}
+\lr{3}&\lr{6}\\\cline{1-2}
+\lr{5}&\lr{7}\\\cline{1-2}
+\end{array}
+\]
+We multiply the following tableau to the above relation (in the empty columns)
+\[
+\begin{array}[b]{*{14}c}\cline{1-14}
+\lr{1}&\lr{1}&\lr{1}&\lr{}&\lr{1}&\lr{1}&\lr{2}&\lr{2}&\lr{2}&\lr{}&\lr{3}&\lr{3}&\lr{3}&\lr{3}\\\cline{1-14}
+\lr{2}&\lr{2}&\lr{2}&\lr{}&\lr{4}&\lr{4}&\lr{4}&\lr{5}&\lr{5}&\lr{}&\lr{6}&\lr{6}&\lr{6}&\lr{6}\\\cline{1-14}
+\lr{4}&\lr{4}&\lr{4}&\lr{}&\lr{5}&\lr{5}&\lr{5}&\lr{6}&\lr{7}&\lr{}&\lr{7}&\lr{7}&\lr{7}&\lr{7}\\\cline{1-14}
+\end{array}
+\]
+then we get following
+\begin{align*}
+&
+\begin{array}[c]{*{14}c}\cline{1-14}
+\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{2}&\lr{2}&\lr{2}&\lr{3}&\lr{3}&\lr{3}&\lr{3}&\lr{3}\\\cline{1-14}
+\lr{2}&\lr{2}&\lr{2}&\lr{3}&\lr{4}&\lr{4}&\lr{4}&\lr{5}&\lr{5}&\lr{6}&\lr{6}&\lr{6}&\lr{6}&\lr{6}\\\cline{1-14}
+\lr{4}&\lr{4}&\lr{4}&\lr{5}&\lr{5}&\lr{5}&\lr{5}&\lr{6}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}\\\cline{1-14}
+\end{array}\\
+&\hspace{20pt}
+\ =\ -\ 
+\begin{array}[c]{*{14}c}\cline{1-14}
+\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{2}&\lr{2}&\lr{2}&\lr{3}&\lr{3}&\lr{3}&\lr{3}&\lr{3}\\\cline{1-14}
+\lr{2}&\lr{2}&\lr{2}&\lr{3}&\lr{4}&\lr{4}&\lr{4}&\lr{5}&\lr{5}&\lr{5}&\lr{6}&\lr{6}&\lr{6}&\lr{6}\\\cline{1-14}
+\lr{4}&\lr{4}&\lr{4}&\lr{7}&\lr{5}&\lr{5}&\lr{5}&\lr{6}&\lr{7}&\lr{6}&\lr{7}&\lr{7}&\lr{7}&\lr{7}\\\cline{1-14}
+\end{array}
+\ +\ 
+\begin{array}[c]{*{14}c}\cline{1-14}
+\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{2}&\lr{2}&\lr{2}&\lr{3}&\lr{3}&\lr{3}&\lr{3}&\lr{3}\\\cline{1-14}
+\lr{2}&\lr{2}&\lr{2}&\lr{3}&\lr{4}&\lr{4}&\lr{4}&\lr{5}&\lr{5}&\lr{5}&\lr{6}&\lr{6}&\lr{6}&\lr{6}\\\cline{1-14}
+\lr{4}&\lr{4}&\lr{4}&\lr{6}&\lr{5}&\lr{5}&\lr{5}&\lr{6}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}\\\cline{1-14}
+\end{array}
+\end{align*}
+Observe that the tableau on left hand side is \(t_7\) and also observe that the following two tableaux are factors of two tableaux on right side in above relation
+\begin{align*}
+f_{71}\ =\ 
+\begin{array}[c]{*{7}c}\cline{1-7}
+\lr{1}&\lr{1}&\lr{1}&\lr{2}&\lr{2}&\lr{3}&\lr{3}\\\cline{1-7}
+\lr{2}&\lr{3}&\lr{4}&\lr{4}&\lr{5}&\lr{6}&\lr{6}\\\cline{1-7}
+\lr{4}&\lr{7}&\lr{5}&\lr{5}&\lr{6}&\lr{7}&\lr{7}\\\cline{1-7}
+\end{array}
+\hspace{50pt}
+f_{72}\ =\ 
+\begin{array}[c]{*{7}c}\cline{1-7}
+\lr{1}&\lr{1}&\lr{1}&\lr{2}&\lr{2}&\lr{3}&\lr{3}\\\cline{1-7}
+\lr{2}&\lr{3}&\lr{4}&\lr{4}&\lr{5}&\lr{6}&\lr{6}\\\cline{1-7}
+\lr{4}&\lr{6}&\lr{5}&\lr{5}&\lr{7}&\lr{7}&\lr{7}\\\cline{1-7}
+\end{array}
+\end{align*}
+
+\subsection{Factoring \(t_6\)}
+We use the following Pl\"{u}cker relation:
+\begin{align*}
+R_5:\ \ \ 0\ =\ 
+\begin{array}[c]{*{2}c}\cline{1-2}
+\lr{1}&\lr{1}\\\cline{1-2}
+\lr{2}&\lr{3}\\\cline{1-2}
+\lr{5}&\lr{4}\\\cline{1-2}
+\end{array}
+\ -\ 
+\begin{array}[c]{*{2}c}\cline{1-2}
+\lr{1}&\lr{1}\\\cline{1-2}
+\lr{2}&\lr{3}\\\cline{1-2}
+\lr{4}&\lr{5}\\\cline{1-2}
+\end{array}
+\ +\ 
+\begin{array}[c]{*{2}c}\cline{1-2}
+\lr{1}&\lr{1}\\\cline{1-2}
+\lr{2}&\lr{4}\\\cline{1-2}
+\lr{3}&\lr{5}\\\cline{1-2}
+\end{array}
+\end{align*}
+We multiply the following tableau to the above relation (in the empty columns)
+\[
+\begin{array}[b]{*{14}c}\cline{1-14}
+\lr{}&\lr{1}&\lr{1}&\lr{}&\lr{1}&\lr{1}&\lr{2}&\lr{2}&\lr{2}&\lr{3}&\lr{3}&\lr{3}&\lr{3}&\lr{3}\\\cline{1-14}
+\lr{}&\lr{2}&\lr{2}&\lr{}&\lr{4}&\lr{4}&\lr{4}&\lr{5}&\lr{5}&\lr{6}&\lr{6}&\lr{6}&\lr{6}&\lr{6}\\\cline{1-14}
+\lr{}&\lr{4}&\lr{4}&\lr{}&\lr{5}&\lr{5}&\lr{5}&\lr{6}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}\\\cline{1-14}
+\end{array}    
+\]
+We get
+\begin{align*}
+&
+\begin{array}[c]{*{14}c}\cline{1-14}
+\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{2}&\lr{2}&\lr{2}&\lr{3}&\lr{3}&\lr{3}&\lr{3}&\lr{3}\\\cline{1-14}
+\lr{2}&\lr{2}&\lr{2}&\lr{3}&\lr{4}&\lr{4}&\lr{4}&\lr{5}&\lr{5}&\lr{6}&\lr{6}&\lr{6}&\lr{6}&\lr{6}\\\cline{1-14}
+\lr{5}&\lr{4}&\lr{4}&\lr{4}&\lr{5}&\lr{5}&\lr{5}&\lr{6}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}\\\cline{1-14}
+\end{array}\\
+&\hspace{20pt}
+\ =\ 
+\begin{array}[c]{*{14}c}\cline{1-14}
+\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{2}&\lr{2}&\lr{2}&\lr{3}&\lr{3}&\lr{3}&\lr{3}&\lr{3}\\\cline{1-14}
+\lr{2}&\lr{2}&\lr{2}&\lr{3}&\lr{4}&\lr{4}&\lr{4}&\lr{5}&\lr{5}&\lr{6}&\lr{6}&\lr{6}&\lr{6}&\lr{6}\\\cline{1-14}
+\lr{4}&\lr{4}&\lr{4}&\lr{5}&\lr{5}&\lr{5}&\lr{5}&\lr{6}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}\\\cline{1-14}
+\end{array}
+\ -\ 
+\begin{array}[c]{*{14}c}\cline{1-14}
+\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{1}&\lr{2}&\lr{2}&\lr{2}&\lr{3}&\lr{3}&\lr{3}&\lr{3}&\lr{3}\\\cline{1-14}
+\lr{2}&\lr{2}&\lr{2}&\lr{4}&\lr{4}&\lr{4}&\lr{4}&\lr{5}&\lr{5}&\lr{6}&\lr{6}&\lr{6}&\lr{6}&\lr{6}\\\cline{1-14}
+\lr{3}&\lr{4}&\lr{4}&\lr{5}&\lr{5}&\lr{5}&\lr{5}&\lr{6}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}&\lr{7}\\\cline{1-14}
+\end{array}
+= t_7 - t_6.
+\end{align*}
+Observe that following tableau ia factor of left hand side tableau in above relation
+\[
+f_6\ =\ 
+\begin{array}[c]{*{7}c}\cline{1-7}
+\lr{1}&\lr{1}&\lr{1}&\lr{2}&\lr{3}&\lr{3}&\lr{3}\\\cline{1-7}
+\lr{2}&\lr{2}&\lr{4}&\lr{4}&\lr{6}&\lr{6}&\lr{6}\\\cline{1-7}
+\lr{4}&\lr{5}&\lr{5}&\lr{5}&\lr{7}&\lr{7}&\lr{7}\\\cline{1-7}
+\end{array}
+\]
+\eat{
+}%END of TEST \eat
+%END of macro ==============
+%\begin{document}
+
+
+%\degtwotab
+
