@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.8.22)  8 FEB 2022 14:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.8.22)  9 FEB 2022 14:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -732,28 +732,18 @@ LaTeX Font Info:    Trying to load font information for U+eus on input line 31.
 File: ueus.fd 2013/01/14 v3.01 Euler Script
 ) [5] [6])
 (./grassmannian_normality.tex (./examples/g37chain28ex.tex [7]) [8])
-(./flag_varieties_normality.tex
-Overfull \hbox (34.10147pt too wide) in paragraph at lines 3--4
-\OT1/cmr/m/n/10.95 We use ideas sim-i-lar to what we used in the pre-vi-ous sec
--tion to study GIT quo-tients $\OML/cmm/m/it/10.95 T\OMS/cmsy/m/n/10.95 nn\OT1/
-cmr/m/n/10.95 (\OML/cmm/m/it/10.95 SL\OT1/cmr/m/n/10.95 (5\OML/cmm/m/it/10.95 ;
- \U/msb/m/n/10.95 C\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 =Q\OT1/cmr/m/n/10.95
- )[]\OMS/cmsy/m/n/10.95 L\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^U\OT1/cmr/m/
-n/10.95 )$,
- []
-
-[9] (./examples/shape32chain0.tex) (./examples/shape32aug_mat_chain0.tex)
-(./examples/shape32shape_mat_chain0.tex) (./examples/shape32chain0hb.tex)
-(./examples/shape32hb.tex) [10]) (./flag_varieties_relations.tex [11])
-(./main.bbl [12]) (./app2_sch367.tex [13] [14] [15] [16])
-(./app3_fv_notations.tex [17]) (./app4_fv_hbs.tex [18] [19]
-(./examples/shape41hb.tex) (./examples/shape311hb.tex [20])
-(./examples/shape221hb.tex) (./examples/shape221x1x2rel.tex)
-(./examples/shape2111hb.tex)) [21] (./main.aux) ) 
+(./flag_varieties_normality.tex [9] (./examples/shape32chain0.tex)
+(./examples/shape32aug_mat_chain0.tex) (./examples/shape32shape_mat_chain0.tex)
+(./examples/shape32chain0hb.tex) (./examples/shape32hb.tex) [10])
+(./flag_varieties_relations.tex [11]) (./main.bbl [12]) (./app2_sch367.tex
+[13] [14] [15] [16]) (./app3_fv_notations.tex [17]) (./app4_fv_hbs.tex [18]
+[19] (./examples/shape41hb.tex) (./examples/shape311hb.tex [20])
+(./examples/shape221hb.tex) (./examples/shape221x1x2rel.tex [21])
+(./examples/shape2111hb.tex)) [22] (./main.aux) ) 
 Here is how much of TeX's memory you used:
  17455 strings out of 480502
  341332 string characters out of 5899264
- 814816 words of memory out of 5000000
+ 814818 words of memory out of 5000000
  34709 multiletter control sequences out of 15000+600000
  427825 words of font info for 121 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -784,10 +774,10 @@ nts/type1/public/amsfonts/cm/cmtt9.pfb></home/study/texlive/2021/texmf-dist/fon
 ts/type1/public/amsfonts/euler/eusm10.pfb></home/study/texlive/2021/texmf-dist/
 fonts/type1/public/amsfonts/euler/eusm7.pfb></home/study/texlive/2021/texmf-dis
 t/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (21 pages, 383607 bytes).
+Output written on main.pdf (22 pages, 387237 bytes).
 PDF statistics:
- 205 PDF objects out of 1000 (max. 8388607)
- 128 compressed objects within 2 object streams
+ 208 PDF objects out of 1000 (max. 8388607)
+ 130 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
