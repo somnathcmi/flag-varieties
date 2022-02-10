@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.8.22)  10 FEB 2022 10:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.8.22)  10 FEB 2022 16:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -739,7 +739,11 @@ File: ueus.fd 2013/01/14 v3.01 Euler Script
 [13] [14] [15] [16]) (./app3_fv_notations.tex [17]) (./app4_fv_hbs.tex [18]
 [19] (./examples/shape41hb.tex) (./examples/shape311hb.tex [20])
 (./examples/shape221hb.tex) (./examples/shape221x1x2rel.tex [21])
-(./examples/shape2111hb.tex)) [22] (./main.aux) ) 
+(./examples/shape2111hb.tex)) [22] (./main.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
  17456 strings out of 480502
  341350 string characters out of 5899264
@@ -748,33 +752,33 @@ Here is how much of TeX's memory you used:
  427825 words of font info for 121 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  98i,14n,97p,1872b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/amruta/.texlive2019/te
-xmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0600.600pk> </home/amruta/.texlive2019/
-texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0800.600pk></home/study/texlive/2021/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/study/texlive/2021/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/study/texlive/2021/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/study/texlive/2021/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/study/texlive/2021/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></home/study/texlive/2021/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></home/study/texlive/2021/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/study/texlive/2021/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></home/study/texlive/2021/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></home/study/texlive/2021/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/study/texlive/2021/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/study/texlive/2021/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></home/study/texlive/2021/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/study/texlive/2021/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/study/texlive/2021/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/study/texlive/2021/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/study/texlive/2021/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy6.pfb></home/study/texlive/2021/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy8.pfb></home/study/texlive/2021/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmti10.pfb></home/study/texlive/2021/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmtt9.pfb></home/study/texlive/2021/texmf-dist/fon
-ts/type1/public/amsfonts/euler/eusm10.pfb></home/study/texlive/2021/texmf-dist/
-fonts/type1/public/amsfonts/euler/eusm7.pfb></home/study/texlive/2021/texmf-dis
-t/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (22 pages, 389308 bytes).
+ </home/amruta/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0600.60
+0pk> </home/amruta/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0800.
+600pk></home/study/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
+0.pfb></home/study/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
+2.pfb></home/study/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex1
+0.pfb></home/study/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi1
+0.pfb></home/study/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi1
+2.pfb></home/study/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6
+.pfb></home/study/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.
+pfb></home/study/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.p
+fb></home/study/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.
+pfb></home/study/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
+fb></home/study/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pf
+b></home/study/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+></home/study/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><
+/home/study/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></h
+ome/study/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></hom
+e/study/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></hom
+e/study/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></home
+/study/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></home/
+study/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></home/
+study/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></home/s
+tudy/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb></hom
+e/study/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/euler/eusm7.pfb></h
+ome/study/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pf
+b>
+Output written on main.pdf (22 pages, 390935 bytes).
 PDF statistics:
  208 PDF objects out of 1000 (max. 8388607)
  130 compressed objects within 2 object streams
