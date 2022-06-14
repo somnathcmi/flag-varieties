@@ -39,4 +39,11 @@ This file defines class FlagVarietyWithHBOfTInvariants. The compute\_hb function
  
 The function hb\_monomials convert Hilbert basis vectors to standard monomials, an instance of class TableauMonomial.
 
+## tinv\_monomial.py
+This file implements following algorithm: given Tinvarient monomial need not be standard check whether there are two Tinvariant factors.
+Algorithm is as follows
+1. Get indicator matrix of monomial
+2. degree vector of given monomial is in Hilbert basis of $ker(A) \cap R^{d+1}\_{\ge} $ iff there are Tinvarient non constant factors 
+  
+
  
