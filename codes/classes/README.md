@@ -16,4 +16,18 @@ get\_nc\_pairs: scan all coordinates and return list of non comparable pairs und
 get\_augmented\_indicator\_matrix: columns are indicator vectors of nonzero coordinates on the variety
 get\_augmented\_shape\_matrix: as in appendix B.
 
+See documentation for exact description
 
+## monomial.py, polynomial.py
+These files contain class TableauMonomial and TableauPolynomial. This implements polynomials in the coordinate ring of FlagVariety, an instance of class flag variety. 
+
+stores varoety reference, coeff, coordinate, the degree vector($v'_{_{S}}$ for monomials, in appendix B).
+defines addition(\_\_add\_\_), multiplication (\_\_mul\_\_), negate, indicator matrix, get nc pair, weight vector etc.
+
+## tableau\_relation.py
+
+This file contain class TableauRelation, which stores plucker relation generated from non comparable pairs. This is implemented only for required cases.
+
+
+
+ 
