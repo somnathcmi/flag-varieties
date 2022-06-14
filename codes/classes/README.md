@@ -44,6 +44,17 @@ This file implements following algorithm: given Tinvarient monomial need not be 
 Algorithm is as follows
 1. Get indicator matrix of monomial
 2. degree vector of given monomial is in Hilbert basis of $ker(A) \cap R^{d+1}\_{\ge} $ iff there are Tinvarient non constant factors 
-  
+
+
+## straighten.py
+
+This File contain class StraightenAlgo, an implementation of straighteining algorithm.
+
+
+## tinv\_ss\_monomials.py
+
+wrapper class for list of T invariant semistandard monomials.
+
+
 
  
