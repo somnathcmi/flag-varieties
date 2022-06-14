@@ -28,6 +28,15 @@ defines addition(\_\_add\_\_), multiplication (\_\_mul\_\_), negate, indicator m
 
 This file contain class TableauRelation, which stores plucker relation generated from non comparable pairs. This is implemented only for required cases.
 
-
+## tinv\_hb.py
+This file defines class FlagVarietyWithHBOfTInvariants. The compute\_hb function implements section4 and Appendix B. in sequence following are the steps (from line 68)
+1. get all maximal chains from Bruhat poset.
+2. get augmented indicator matrix $A$ of variety.
+3. for each chain, 
+3.1 get submatrix $Ac$ of $A$ corresponding to the chain.
+3.2 compute Hilbert basis of $ker(Ac) \cap R^{l+1}\_{\ge 0}$.
+3.3 append to already computed HBs of previous chains.
+ 
+The function hb\_monomials convert Hilbert basis vectors to standard monomials, an instance of class TableauMonomial.
 
  
