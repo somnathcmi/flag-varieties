@@ -21,7 +21,7 @@ See documentation for exact description
 ## monomial.py, polynomial.py
 These files contain class TableauMonomial and TableauPolynomial. This implements polynomials in the coordinate ring of FlagVariety, an instance of class flag variety. 
 
-stores varoety reference, coeff, coordinate, the degree vector($v'_{_{S}}$ for monomials, in appendix B).
+stores varoety reference, coeff, coordinate, the degree vector( $v'\_{\_{S}}$ for monomials, in appendix B).
 defines addition(\_\_add\_\_), multiplication (\_\_mul\_\_), negate, indicator matrix, get nc pair, weight vector etc.
 
 ## tableau\_relation.py
