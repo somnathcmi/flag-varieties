@@ -1,0 +1,144 @@
+\section{Generating set of $T$-invariants using polyhedral theory}
+\label{hb_as_Tinv_gens}
+Since $H^0(Gr_{r,n}, {\cal L}(kn\omega_r))$ is spanned by standard monomials, the homogeneous coordinate ring of the $T$-quotient, $R=\oplus_k R(k)$, is spanned by $T$-invariants which are standard. We call these standard $T$-invariants.  
+
+Now, standardness is defined by the "$\leq$" relation on the Br\"{u}hat poset. A $T$-invariant monomial which is the product of Pl\"{u}cker coordinates with support in a maximal chain in the Br\"{u}hat poset is naturally standard.  This gives us a recipe to find generators for the ring of invariants. For every maximal chain ${\cal C}$ in the Br\"{u}hat poset, find a generating set of $T$-invariant monomials which can be expressed as a product of Pl\"{u}cker coordinates with support in ${\cal C}$. The union of these generating sets of $T$-invariant monomials over all maximal chains in the Br\"{u}hat poset is a generating set for the ring of invariants. This follows since every standard monomial $p_{S}$ that is $T$-invariant has Pl\"{u}cker coordinates which are pairwise comparable, and so there is a maximal chain in the Br\"{u}hat poset which contains the support of $p_{S}$.  We prune the generating set using straightening relations from standard monomial theory. To carry out the first step, we use polyhedral theory. We describe this in the next section.  
+
+It will be clear that with a little work this approach can be extended to partial flag varieties.  While this approach is general, it is computationally prohibitive. We were able to carry out this program for $Gr_{3,7}$ and for flag varieties of the form $SL(5,{\mathbb C})/Q$, where $Q$ is the intersection of two maximal parabolic subgroups of $SL(5,{\mathbb C})$ containing $B$. 
+\subsection{$T$ invariants with support in a maximal chain}
+\label{sec:formulation}
+We formulate the question of obtaining a generating set of $T$-invariant monomials with support in a fixed maximal chain ${\mathcal C}$, of the Bruhat poset using notions from polyhedral theory.  We recall the relevant definitions. A standard and wonderful reference for all this is Schrijver's book \cite{schrijver1998theory}. 
+
+\begin{definition}[Cone]
+    A  subset \(C \subseteq  \IR^n\) is a cone if for any \(x,y\in C\) and non-negative real numbers \(\lambda_1,\lambda_2\), we have \(\lambda_1 x + \lambda_2 y \in P\). A cone \(C\) is pointed if \(C \cap -C = \{0\}\). 
+    A cone \(C\) is polyhedral if \(C = \{ x \in \IR^n | Mx \ge 0\}\) for some $m \times n$ real matrix \(M\). 
+    A set $\{g_1,...g_k\} \subset C$ is called a (conical) generating set  of \(C\) if for all \(x \in C\) there exist non-negative real numbers \(\lambda_1,...,\lambda_k\) such that \(x = \sum_{i=1}^k \lambda_i g_i\).
+\end{definition}
+
+\begin{definition}[Hilbert basis]
+    Let \(C \in \IR^n\) be a polyhedral cone with rational generators. \eat{and 
+    let \(\Lambda \subset \IZ^n\) be a lattice.}
+    We call a finite set \(H = \{h_1,...,h_t\} \subset \IZ^n \cap C\) a Hilbert basis of $C$,
+   if for every integral vector $v \in C$ there exist non-negative integers \(\lambda_1,...,\lambda_t\) such that 
+    $v=\sum_{i=1}^t \lambda_i h_i.$ 
+  \end{definition} 
+  
+  The following is well known, see \cite[Theorem 16.4]{schrijver1998theory}.   
+ \begin{proposition}
+Every rational polyhedral pointed cone has a unique inclusion minimal Hilbert basis.
+ \end{proposition}
+ 
+We will show that $T$-invariant monomials in a fixed maximal chain $\SC$ in the Br\"{u}hat order are in bijection with integer points in a polyhedral cone $C_{\SC}$. It will then follow that monomials corresponding to the Hilbert basis of integer points in $C_{\SC}$ will be a generating set for invariants whose support is in $\SC$, and these will be standard by the discussion in the previous section.
+
+Let \(\SC = {\UL{i}_1} \le \cdots \le  {\UL{i}_l}\) be a \eat{maximal }chain in the Bruhat poset \(I_{r,n}\). For every standard monomial \(p_{\UL{i}_1}^{a_{\UL{i}_1}}p_{\UL{i}_2}^{a_{\UL{i}_2}}...p_{\UL{i}_l}^{a_{\UL{i}_l}}\) of degree \(k\), we have a semistandard tableau \(S\) of rectangular shape \((k^r)\) such that column \(\UL{i}_j\) appears \(a_{\UL{i}_j}\) times in \(S\), for  each \(1 \le j \le l\). Note that some of \(a_{{\UL i}_j}\) may be \(0\). 
+Associate vectors \(v'_{_S} = (a_{\UL{i}_1},...,a_{\UL{i}_l})\) and \(v_{_S} = (v'_{_S},\frac{k}{n})\) with this standard monomial.
+If \(X,Y\) are tableaux with support in \(\SC\)  and \(XY\) is the tableau associated with monomial \(p_{_X}p_{_Y}\) then clearly \(v'_{_{XY}} = v'_{_X} + v'_{_Y}\) and \(v_{_{XY}} = v_{_X}+v_{_Y}\).
+
+    We associate with $\SC$ an \(n \times l\) matrix \(A'_{\SC}\) with rows indexed by \([n]\) and columns indexed by Pl\"{u}cker coordinates with support in the chain \(\SC\) as follows: for \(i \in [n],\UL{j} \in \SC\),
+    \[
+        (A'_{\SC})_{i,\UL{j}}=
+        \left\{\begin{array}{cc}
+            1  &  i \in \UL{j}\\
+            0  &  i \not\in \UL{j}
+        \end{array}\right.
+    \]
+That is the \(\UL{j}^{th}\) column of \(A'_{\SC}\) is weight vector of column tableau \(\UL{j}\). Let \(v = (-r,\cdots,-r)\) be a \(n\)-dimentional vector. Let \(A_{\SC} \DEF [A'_{\SC}|v]\) be the matrix \(A'_{\SC}\) augmented with column \(v\). Let \(C_{\SC} = \IR_{\ge0}^{l+1} \cap ker(A_{\SC})\). We have following observations.
+    \begin{observation}
+        \label{obs:tableauasvector}
+        Let \(S\) be a tableau whose columns are in \(\SC\). For \(i \in [n]\) we have
+        \begin{center}
+        \((A'_{\SC}v'_{_S})_{i} = \) number of columns in \(S\) which contain \(i\).
+        \end{center}
+        Hence, \(wt(S) = A'_{\SC}v'_{_S}\). If \(S\) is \(T\)-invariant then \(v_{_S}\) is a nonzero integral vector in \(C_{\SC}\).
+    \end{observation}
+    \begin{proof}
+        \[
+            (A'_{\SC}v'_{_S})_{i} 
+            = \sum_{\UL{j} \in \SC} (A'_{\SC})_{i,\UL{j}} (v'_{_S})_{\UL{j}}
+            = \sum_{i \in \UL{j},\UL{j}\in \SC} (v'_{_S})_{\UL{j}}.
+        \]
+        This proves \(wt(S) = A'_{\SC}v'_{\SC}\). 
+
+        To prove that \(v_{_S}\) is integral vector for a \(T\)-invariant tableau \(S\), we need to show that \(\frac{k}{n}\) is integer. Observe that since \(wt(S) = (\frac{kr}{n},\cdots,\frac{kr}{n})\) is an integer vector we have \(n|k\) since \((r,n)=1\).  \(v_{_S} \in ker(A_{\SC})\) follows from definition of \(A_{\SC}\). The non-negativity of \(v_{_S}\) follows from definition of \(v_{_S}\).
+    \end{proof}
+    \begin{observation}
+        Let \(x=(x',d)\in \IZ_{\ge0}^{l+1}\cap C_{\SC}\) be a nonzero integer vector and suppose $d=\frac{k}{n}$ for some \(k\). Then there exists a \(T\)-invariant semistandard tableau \(S\) of degree \(k\) such that \(x=v_{_S}\).
+    \end{observation}
+    \begin{proof}
+        Define the tableau \(S\) with \(\UL{j} \in \SC\) appearing in \(S\),  \(x'_{\UL{j}}\) times.
+        Then we have \(x' = v'_{_S}\).
+        Since the columns of \(S\) have support in $\SC$, these columns can be sorted so that \(S\) is semistandard.
+        It remains to show that \(S\) is \(T\)-invariant and of degree \(k\). 
+        That is \(wt(S) = (\frac{kr}{n},\cdots,\frac{kr}{n})\).
+        This follows from calculation below.
+        \[
+            A_{\SC}x = 0
+            \implies [A'_{\SC}|w](x',\frac{k}{n}) = 0
+            \implies A'_{\SC}x' = -\frac{k}{n}w
+            \implies wt(S) = (\frac{kr}{n},\cdots,\frac{kr}{n}).
+        \]
+    \end{proof}
+
+\begin{corollary}
+\label{cor:inv-cone}
+We have a bijection between \(T\) invariant monomials with support in \(\SC\) and nonzero integral points in \(C_{\SC}\) given by tableau \(S \mapsto v_{_S}\). 
+\end{corollary}
+\begin{proof}
+   This follows from the above observations.
+\end{proof}
+\begin{corollary}
+\label{cor:Hilb}
+$C_{\SC} = ker(A_{\SC}) \cap {\mathbb R}_{\ge0}^{l+1}$ is a pointed cone. Hence $C_{\SC}$ has a unique inclusion minimal Hilbert basis.
+\end{corollary}
+\begin{proof}
+   This follows from the observation that any subspace intersected with a pointed cone (the non-negative orthant in our case) results in a pointed cone.
+\end{proof}
+
+\subsection{Generating set of $T$-invariants}
+For a maximal chain $\SC$, let $H_{\SC}$ denote the unique Hilbert basis of the pointed polyhedral cone  \(C_{\SC}\).
+\eat{Let \(H = \bigcup H_{\SC}\) where union is taken over all maximal chains in \(I_{r,n}\).}
+
+\begin{definition}
+    We say a \(T\) invariant semistandard tableau \(S\) splits directly 
+    if there are two \(T\) invariant semistandard tableaux \(X,Y\) such that \(S=XY\) up to rearrangement of columns. 
+\end{definition}
+
+The following lemma is now immediate.
+\begin{lemma}
+    \label{lemma:grass_directsplittinglemma}
+    Let \(S\) be any \(T\) invariant semistandard tableau. \(S\) splits directly iff \(v_{_S} \not\in H_{\SC}\ \) for any maximal chain $\SC$ in \(I_{r,n}\).
+\end{lemma}
+\begin{proof} 
+    Let \(\SC\) be any maximal chain such that all columns of \(S\) are in \(\SC\).
+
+    \((\implies)\)
+    Let \(S\) splits directly then there are \(T\)-invariant semistandard tableaux \(X,Y\) such that 
+    \(S = XY\) up to rearranging columns. 
+    This implies \(v_{_S} = v_{_X} + v_{_Y}\) in the chain \(\SC\) 
+    and thus \(v_{_S}\) is decomposible hence \(v_{_S} \not\in H_{\SC}\).
+
+    \((\impliedby)\) If \(v_{_S} \not\in H_{\SC}\) then there are non-negative integers 
+    \(\lambda_1,...,\lambda_t\) such that \(v_{_S} = \sum_{i=1}^t \lambda_i h_i\) and \(\sum_{i=1}^t \lambda_i \ge 2\) (otherwise \(v_{_S} \in H\)). 
+    This implies there is \(u\in \IZ^{l+1}\cap C_{\SC} \) and \(h,h' \in H\) 
+    such that \(v_{_S} = h + h' + u\). Hence \(S = XYZ\) up to rearranging columns where \(X,Y,Z\) are \(T\)-invariant tableaux such that \(v_{_X}=h,v_{_Y}=h',v_{_Z}=u\).   So $S$ splits, completing the proof.
+\end{proof}
+
+We have,
+\begin{theorem}
+\label{thm:main}
+    The coordinate ring of \(\Lgmnmodt{r}{n}{{\cal L}(n\omega_r)}\) is generated by the union of standard monomials corresponding to elements in the Hilbert basis $H_{\SC}$, the union taken over all maximal chains $\SC$ in \(I_{r,n}\).
+\end{theorem}
+\begin{proof}
+The proof follows from the definition of a Hilbert basis of a polyhedral cone, the definition of a split tableau and Corollary~\ref{cor:inv-cone}, Corollary~\ref{cor:Hilb} and Lemma~\ref{lemma:grass_directsplittinglemma}.
+
+\end{proof}
+
+In fact, the above proof works for any Schubert variety in the Grassmannian. We state this for completeness.
+\begin{corollary}
+\label{cor:schub}
+    Let \(w \in I_{r,n}\) and \({\cal P}\subset I_{r,n}\) be the sub-poset consisting of elements $v \in I_{r,n}$ such that $v \leq w$. The coordinate ring of \(\LXWmodT{w}{{\cal L}(n\omega_r)}\) is generated by the union of standard monomials corresponding to elements in the Hilbert basis $H_{\SC}$, where the union is taken over all maximal chains $\SC$ in the poset \({\cal P}\).
+\end{corollary}
+\begin{proof}
+ Clear.
+\end{proof}
+

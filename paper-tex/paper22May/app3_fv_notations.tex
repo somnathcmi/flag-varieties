@@ -1,0 +1,111 @@
+%\input{lib}
+%\newcommand\notationss{
+    \section{Hilbert basis of flag varieties}
+    \label{sec:fv_notations}
+    We define a few notations and make some observations.
+
+   Let \(Q = P^{\alpha_r}\cap P^{\alpha_s}\) be a parabolic subgroup of  \(G\) (we assume \(r>s\)). Let \(\lambda = a \omega_r + b \omega_s \) be a dominant weight.  Denote by \(\gamma_k\)  the Young diagram such that \(\gamma_k^t = (ka,kb)\) for \(k\ge1\). Let \(S\) be a semistandard tableau of shape \(\gamma_k\). 
+Let \(\UL{i} = (i_1,...,i_d)\) denote a column in \(S\) and \(p_{\UL{i}}\) be the Pl\"{u}cker coordinate corresponding to \(\UL{i}\) where \(d \in \{r,s\}\) and \(1 \le i_1 < \cdots < i_d \le n\). Let \(p_{_S} = \prod\limits_{\UL{i}\in S} p_{\UL{i}}\) be the monomial associated to semistandard tableau \(S\). Then \(p_{_S} \in H^0(\gmodq,{\cal L}(\lambda)^{\otimes k})\). It is known that the set of all standard monomials of shape \(\gamma_k\) forms a basis of  \(H^0(\gmodq,{\cal L}(\lambda)^{\otimes k})\) (see \cite{lakshmibai2015grassbook} Theorem 8.2.4). 
+    
+    Assume \(ar + bs = n\). It is clear that a monomial \(p_{_S} \in H^0(\gmodq,{\cal L}(\lambda)^{\otimes k})\) is \(T\) invariant if and only if each integer \(i \in [n]\) appears exactly \(k\) times in tableau \(S\). Define the weight of tableau \(S\) to be the \(n\)-dimentional vector \(wt(S)\) such that each \(i\in [n]\) appears \(wt(S)_i\) times in tableau \(S\).
+
+    Let $I_{Q} = I_{r,n} \cup I_{s,n}$. We extend the Br\"{u}hat order on \(I_{r,n}\) and \(I_{s,n}\) to \(I_{Q}\) as follows: For \(\UL{i} \in I_{r,n}, \UL{j} \in I_{s,n}\) define 
+\begin{center}
+\(\UL{i} \le \UL{j}\) if \(\UL{i}_l \le \UL{j}_l\) for \(1 \le l \le s\).
+\end{center}
+    
+    Let \(\SC = {\UL{i}_1} \le \cdots \le  {\UL{i}_l}\) be a chain in the poset $I_Q$ and \(p_{\UL{i}_1}^{a_{\UL{i}_1}}p_{\UL{i}_2}^{a_{\UL{i}_2}}...p_{\UL{i}_l}^{a_{\UL{i}_l}} \in H^0(\gmodq, {\cal L}(\lambda)^{\otimes k})\) be a standard monomial and let the corresponding semistandard tableau be \(S\). Associate vectors \(v'_{_S} = (a_{\UL{i}_1},...,a_{\UL{i}_l})\) and \(v_{_S} = (v'_{_S},k)\) with this monomial.
+    
+    We associate the \(n \times l\) matrix \(A'_{\SC}\) indexed by \([n]\times \SC\) with chain \(\SC\) in the same way as we did in the Grassmannian case: For \({\UL{j}} \in \SC\), the \(\UL{j}^{th}\) column of \(A'_{\SC}\) is the weight vector of column tableau \(\UL{j}\), 
+Let \(v = (-1,\cdots,-1)\) be a \(n\)-dimentional vector denote \(A_{\SC} \DEF [A'_{\SC}|v]\), the \(A'_{\SC}\) augmented with \(w\). We have following observation:
+    \begin{observation}
+    \label{obs:B1}
+        Let \(S\) be a tableau whose columns are in \(\SC\). For \(i \in [n]\) we have
+        \begin{center}
+        \((A'_{\SC}v'_{_S})_{i} = \) number of columns in \(S\) which contain \(i\).
+        \end{center}
+        Hence, \(wt(S) = A'_{\SC}v'_{_S}\). Also if \(S\) is \(T\)-invariant then \(v_{_S}\) is nonzero integral vector in \(ker(A_{\SC})\).
+    \end{observation}
+    \begin{proof}
+        The proof is similar to the proof of Observation~\ref{obs:tableauasvector} and is omitted.
+    \end{proof}
+    To make sure that the shape of the tableau is that of \(\gamma_k\) for some $k$, we need to associate another matrix \(B'_{\SC}\) with chain \(\SC\) whose entries are indexed by the set \(\{r,s\} \times \SC\). \(B'_{\SC}\) is defined  as follows: For \(i \in \{r,s\}, \UL{j} \in \SC\) define
+    \[
+        (B'_{\SC})_{i,\UL{j}}=
+        \left\{\begin{array}{cc}
+            1  &  |\UL{j}| = i\\
+            0  &  |\UL{j}| \ne i 
+        \end{array}\right.
+    \]
+   Here \(|\UL{i}|\) is the length of column \(\UL{i}\). Let \(u = (-a,-b)\) be a 2-dimentional vector. Denote \(B_{\SC} \DEF [B'_{\SC} | u]\), \(B'_{\SC}\) augmented with vector \(u\). 
+    We have the following observations:
+    \begin{observation}
+        Let \(S\) be a tableau whose columns are in \(\SC\). For \(i \in \{r,s\}\) we have,
+        \begin{center}
+            \((B'_{\SC}v'_{_S})_{i}\) = number of columns in \(S\) of length \(i\).
+        \end{center}
+        Hence the shape of tableau \(S\) is 
+        \((({B'_{\SC}v'_{_S})_r},({B'_{\SC}v'_{_S})_{s}})^t\). 
+    \end{observation}
+    \begin{proof}
+        \[
+            (B'_{\SC}v'_{_S})_i 
+            = \sum_{\UL{j} \in \SC} (B'_{\SC})_{i,\UL{j}} (v'_{_S})_{\UL{j}}
+            = \sum_{|\UL{j}|=i} (v'_{_S})_{\UL{j}}.
+        \]
+    \end{proof}
+
+    Let \(C_{\SC} = \IR^{l+1}_{\ge 0} \cap ker(A_{\SC}) \cap ker(B_{\SC})\).
+    From the above two observations we see that if \(S\) is a \(T\)-invariant tableau whose columns are in \(\SC\) then \(v_{_S} \in C_{\SC}\).
+    Conversely we have: 
+    \begin{observation}
+        Let \(x=(x',k)\) be a nonzero vector in \(\IZ_{\ge0}^{l+1}\cap C_{\SC}\). There exists a \(T\)-invariant semistandard tableau \(S\) such that \(x=v_{_S}\).
+    \end{observation}
+    \begin{proof}
+        Define tableau \(S\) such that, \(\UL{j} \in \SC\) appears \(x'_{\UL{j}}\) times.
+        Hence we have \(x' = v'_{_S}\).
+        Note that since the columns of \(S\) are from a chain, \(S\) is semistandard.
+        We are done if we show that \(wt(S) = (k,\cdots,k)\) and the
+        shape of \(S\) is \((ka,kb)^t\).
+        This follows from calculations below.
+        \[
+            A_{\SC}x = 0
+            \implies [A'_{\SC}|v](x',k) = 0
+            \implies A'_{\SC}x' = -kv
+            \implies wt(S) = -kv = (k,\cdots,k) .
+        \]
+        \begin{align*}
+            B_{\SC}x = 0
+            \implies [B'_{\SC}|u](x',k) = 0
+            &\implies B'_{\SC}x' = -ku = (ka,kb)\\
+            &\implies (({B'_{\SC}v'_{_S})_r},({B'_{\SC}v'_{_S})_{s}}) = (ka,kb). 
+        \end{align*}
+    \end{proof}
+\begin{corollary}
+\label{corollary:fv_bijection}
+We have a bijection between \(T\) invariant monomials with support in \(\SC\) and nonzero integral points in \(C_{\SC}\) given by tableau \(S \mapsto v_{_S}\). 
+\end{corollary}
+\begin{corollary}
+\label{corollary:fv_pointedcone}
+$C_{\SC}$ is a pointed cone. Hence $C_{\SC}$ has a unique inclusion minimal Hilbert basis.
+\end{corollary}
+Let \(H_{\SC}\) denote Hilbert basis of \(C_{\SC}\). 
+\begin{lemma}
+    \label{lemma:fv_directsplittinglemma}
+    Let \(S\) be any \(T\) invariant semistandard tableau and assume support of $S$ is in chain $\SC$. Then \(S\) splits directly iff \(v_{_S} \not\in H_{\SC}\). 
+\end{lemma}
+\begin{proof} 
+    Proof is the same as that of Lemma~\ref{lemma:grass_directsplittinglemma}.
+\end{proof}
+\begin{theorem}
+   The ring $\oplus_{k\geq 0} H^0(SL(n,{\mathbb C})/Q, {\cal L}(k \lambda))^T$ is generated by the union of standard monomials corresponding to the Hilbert basis of the cone $C_{\SC, \lambda}$. Here the union is taken over all maximal chains in the poset \(I_{Q}\).
+\end{theorem}
+\begin{proof}
+    Follows from Observation~\ref{obs:B1}, Corollary~\ref{corollary:fv_bijection} and Lemma~\ref{lemma:fv_directsplittinglemma}.
+
+\end{proof}
+%}
+%\begin{document}
+%\notationss
+%\end{document}
+

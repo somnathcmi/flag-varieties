@@ -1,0 +1,84 @@
+%\input{lib}
+
+%\begin{document}
+
+\subsection{Shape \((3,2)\)}
+Hilbert basis of \(\SF\SL_{(3,2)}^T\) is 
+    \input{examples/shape32hbex}
+\begin{lemma}
+    \(x_1+x_2,x_1x_2 \in \IC[t_0,t_1,t_2,t_3,t_4]\) using straightaining relations. Hence \(z = x_1-x_2\) is integral over \(\IC[t_0,t_1,t_2,t_3,t_4,z]\) and Krull dimension of \(\IC[t_0,t_1,t_2,t_3,t_4,z]\) is 5.
+\end{lemma}
+\begin{proof}
+    We have following two straightainning relations (see apendix for details):
+    \[x_1x_2  = f_1(t_0,t_1,t_2,t_3,t_4,)\]
+    \[x_1+x_2 = f_2(t_0,t_1,t_2,t_3,t_4,)\]
+    this implies \(x_1-x_2\) is integral over \(\IC[t_0,t_1,t_2,t_3,t_4]\).
+\end{proof}
+
+\section{Relations: Flag varieties in \(n = 5\)}
+\subsection{Shape \((r,1^s)\)}
+In this subsection we will assume that \(\lambda = (r,1^s)\) and \(r+s=n\). 
+%We have following lemma
+\eat{
+\begin{lemma}
+    Let \(S\in STab(\lambda,n,\SC)\) of degree \(d\) 
+    where \(\SC\) is maximal chain in Bruhat poset \((I(\lambda,n), \le)\).
+    For any column \(\UL{p}\) of length \(r\) in \(S\), 
+    there is factor of \(S\) of degree \(1\) which contain \(\UL{p}\).
+\end{lemma}
+\begin{proof}
+    Shape and weight of \(S\) are \((r^d,1^{sd})\) and \(d\VEC{1}\) respectively.
+    Let \(S = X_1X_2\) such that shape of \(X_1\) is \((r^d)\) and shape of \(X_2\) is \((1^{sd})\).
+    Let \(\UL{p}\) be a column in \(X_1\) and \(i \in [n]\) such that 
+    \(i\) do not appear in \(\UL{p}\). We have that weight of \(i\) in \(X_1\) is at most \(d-1\)
+    (There are exactly \(d\) columns in \(X_1\) and entries in colums are distinct). 
+    This implies weight of \(i\) in \(X_2\) is at least \(1\) 
+    (weight of \(i\) in \(S=X_1X_2\) is \(d\)).
+
+    Factor of \(S\) of degree \(1\) is constructed by taking any column \(p\) in \(X_1\) 
+    and all \(i'\)s not appearing in \(\UL{p}\) from \(X_2\).
+\end{proof}
+\begin{corollary}
+    Flag variety \(\SF\SL_{\lambda}\) is projectively normal.\qed
+\end{corollary}
+}
+We define linear map \(\phi_d:\IC[\SF\SL_{\lambda}]_d^T \to \IC[\grass{n-1}{r-1}]_d\) as follows
+\begin{align*}
+    S=
+    \begin{array}[c]{*{6}c}\cline{1-6}
+        \lr{S_{11}}&\lr{\cdots}&\lr{S_{1d}}&\lr{S_{1(d+1)}}&\lr{\cdots}&\lr{S_{1(d+sd)}}\\\cline{1-6}
+        \lr{S_{21}}&\lr{\cdots}&\lr{S_{2d}}\\\cline{1-3}
+        \lr{\vdots}&\lr{\vdots}&\lr{\vdots}\\\cline{1-3}
+        \lr{S_{r1}}&\lr{\cdots}&\lr{S_{rd}}\\\cline{1-3}
+    \end{array}
+    &\mapsto S'=
+    \begin{array}[c]{*{3}c}\cline{1-3}
+        \lr{S_{21}}&\lr{\cdots}&\lr{S_{2d}}\\\cline{1-3}
+        \lr{\vdots}&\lr{\vdots}&\lr{\vdots}\\\cline{1-3}
+        \lr{S_{r1}}&\lr{\cdots}&\lr{S_{rd}}\\\cline{1-3}
+    \end{array}
+\end{align*}
+Tableau \(S'\) is obtained by removing first row in tableau \(S\). Weight of \(1\) in tableau \(S\) is \(d\) hence weight of \(1\) in \(S'\) is \(0\). We get \(\phi_d\) is isomorphism of vector spaces. 
+\begin{observation}
+    Let \(X,Y \in STab(\lambda,n,\SC)\) be two tableaux of degree \((d_1,d_2\) respectively.
+    \(S=XY\) is nonstandard iff there are two columns of length \(r\) in \(S\) 
+    which are noncomparable and both column contain \(1\) in first box.
+\end{observation}
+\begin{proof}
+    Reverse direction is trivial. 
+    To prove forward direction observe that there are \(d_1+d_2\) columns of length \(r\) in \(S\)
+    and first entry in all of these columns is \(1\). 
+    Hence each of the column of length \(r\) in \(S\) is comparable with any column of length \(1\). 
+    Given that \(S\) is nonstandard and any two columns of length \(1\) are comparable 
+    implies there must be two columns of length \(r\) which are not comparable.
+\end{proof}
+
+\begin{corollary}
+    There is bijection between ideal generators of \(T\) quotient of flag variety \(\lambda=(r,1^s)\) and \(\grass{r-1}{n-1}\).
+\end{corollary}
+\begin{corollary}
+    \(T\) quotient of flag variety \(\lambda=(r,1^s)\) is isomorphic to \(\grass{r-1}{n-1}\). In perticular this settles the question of \(T\) quotient shapes \((4,1), (3,1,1), (2,1,1,1)\) when \(n=5\).
+\end{corollary}
+
+
+%\end{document}
