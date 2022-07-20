@@ -53,6 +53,4 @@ This File contain class StraightenAlgo, an implementation of straighteining algo
 
 ## tinv\_ss\_monomials.py
 
-wrapper class for list of T invariant semistandard monomials.
-
-##
+Wrapper class for list of T invariant semistandard monomials.
