@@ -8,11 +8,11 @@ The class defines few important methods: for example Bruhat order (\_\_le\_\_), 
 ## variety.py
 This file contain class "FlagVariety". The class implement subvarieties of flag varieties which can be obtained by setting few coordinates of ambient space to 0, important examples include varieties obtained from union and intersection of Schubert varieties and Richardsons varieties in Grassmannian. Such varieties are determined by $n$, shape of first graded component in coordinate ring, and nonzero coordinates on variety.
 
-The constructor computes important data of such varieties and is stored for later, for example Bruhat poset and trasnpose shape.
+The constructor computes important data of such varieties and is stored for later use, for example Bruhat poset and trasnpose shape.
 
 Methods implemented are:
-\_get\_flag\_variety: static method to get flag variety from different data.
-get\_nc\_pairs: scan all coordinates and return list of non comparable pairs under bruhat order, these are useful to genetate plucker relations for variety.
+\_get\_flag\_variety: static method to construct flag variety from alternate description of variety.
+get\_nc\_pairs: scan all coordinates and return list of non comparable pairs under Bruhat order, these are useful to genetate plucker relations for variety.
 get\_augmented\_indicator\_matrix: columns are indicator vectors of nonzero coordinates on the variety
 get\_augmented\_shape\_matrix: as in appendix B.
 
@@ -21,8 +21,8 @@ See documentation for exact description
 ## monomial.py, polynomial.py
 These files contain class TableauMonomial and TableauPolynomial. This implements polynomials in the coordinate ring of FlagVariety, an instance of class flag variety. 
 
-stores varoety reference, coeff, coordinate, the degree vector( $v'\_{\_{S}}$ for monomials, in appendix B).
-defines addition(\_\_add\_\_), multiplication (\_\_mul\_\_), negate, indicator matrix, get nc pair, weight vector etc.
+Compute and store the degree vector( $v'\_{\_{S}}$ for monomials, in appendix B).
+defines addition(\_\_add\_\_), multiplication (\_\_mul\_\_), negate, indicator\_matrix, get\_nc\_pair, weight\_vector etc.
 
 ## tableau\_relation.py
 
@@ -43,7 +43,7 @@ The function hb\_monomials convert Hilbert basis vectors to standard monomials, 
 This file implements following algorithm: given Tinvarient monomial need not be standard check whether there are two Tinvariant factors.
 Algorithm is as follows
 1. Get indicator matrix of monomial
-2. degree vector of given monomial is in Hilbert basis of $ker(A) \cap R^{d+1}\_{\ge} $ iff there are Tinvarient non constant factors 
+2. degree vector of given monomial is in Hilbert basis of $ker(A) \cap R^{d+1}\_{\ge 0}$ iff there are Tinvarient non constant factors (lemma 4.9).
 
 
 ## straighten.py
@@ -56,5 +56,3 @@ This File contain class StraightenAlgo, an implementation of straighteining algo
 wrapper class for list of T invariant semistandard monomials.
 
 ##
-
-h 
